@@ -1,0 +1,254 @@
+body {
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    /* background-color: #089748a8; */
+    padding-top: 70px;
+    background-image: url("fondo.jpg");
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px; /* Añadir un poco de padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a:hover {
+    color: rgb(88, 218, 157);
+}
+.navbar-brand {
+    font-family: 'Raleway', sans-serif; /* Cambiar la fuente de la marca */
+    font-weight: bold;
+    color: #2fb4cc; /* Color atractivo para la marca */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin-right: 20px; /* Espaciado entre enlaces */
+    font-family: 'Raleway', sans-serif; /* Cambiar la fuente de los enlaces */
+    color: #272323; /* Color de texto */
+    transition: color 0.3s; /* Efecto de transición */
+}
+
+.nav-link:hover {
+    color: rgb(88, 218, 157); /* Color al pasar el mouse */
+}
+
+.custom-button {
+    background-color: #2fb4cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.custom-button:hover {
+    background-color: #1f8c9e;
+}
+
+.hidden {
+    display: none;
+}
+
+#tarea-info {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+#tarea-info2 {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+#tarea-info3 {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(145, 219, 224);
+}
+
+.container {
+    margin-top: 70px; /* Espacio para el nav */
+    position: relative;
+    z-index: 1; /* Asegurarse de que el contenido esté encima de las bolitas */
+}
+
+/* Estilos para las bolitas animadas */
+.bolita {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7); /* Bolitas semitransparentes */
+    animation: mover 20s linear infinite;
+    z-index: -1; /* Asegura que las bolitas estén detrás del contenido */
+}
+
+/* Animación para mover las bolitas */
+@keyframes mover {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(-100vh) translateX(100vw);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+/* Cards */
+.container-card {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.title-cards {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(56, 77, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido-card h3 {
+    margin-bottom: 15px;
+    color: #272323;
+}
+
+.card .contenido-card p {
+    line-height: 1.8;
+    color: #272323;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+h1 {
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva y bonita */
+    text-align: center;
+    font-size: 2.5rem; /* Tamaño ajustable */
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif; /* Mantener la fuente actual */
+}
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    color: #2fb4cc; /* Color para los títulos */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-paragraph {
+    font-family: 'Georgia', serif;
+    color: #333; /* Color del texto */
+    line-height: 1.6;
+}
+
+.section-image {
+    width: 50%; /* Ajusta el ancho de las imágenes */
+    max-width: 300px; /* Tamaño máximo para las imágenes */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block; /* Centrar imágenes */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-bold {
+    color: #2fb4cc; /* Color para el texto en negrita */
+}
+
+.section-list {
+    margin-left: 20px; /* Espacio para la lista */
+    color: #333; /* Color del texto de la lista */
+}
+
+.section-list li {
+    margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}

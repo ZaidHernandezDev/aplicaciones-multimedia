@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Header */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(Images/upiicsa.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente o ajusta según prefieras */
+    z-index: 1000; /* Asegura que el menú quede por encima de otros elementos */
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+}
+
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #7b8dce;
+}   
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+.custom-button {
+    background-color: #2fb4cc;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Bordes más redondeados */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones para el botón */
+}
+
+.custom-button:hover {
+    background-color: #325157;
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.hidden {
+    display: none;
+}
+.alinear {
+    display: flex; /* Utiliza flexbox para alinear elementos en fila */
+    justify-content: flex-start; /* Alinea a la izquierda */
+  }
+  .alinear a {
+    margin-right: 20px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Opcional: elimina el subrayado del enlace */
+    color: blue; /* Cambia el color del enlace */
+  }
+#tarea-info {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.95); /* Fondo más blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+#tarea-info2 {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+#tarea-info3 {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.section-image {
+    width: 50%; /* Ajusta el ancho de las imágenes */
+    max-width: 300px; /* Tamaño máximo para las imágenes */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block; /* Centrar imágenes */
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-paragraph {
+    font-family: 'Georgia', serif;
+    color: #333; /* Color del texto */
+    line-height: 1.6;
+}
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    color: #2fb4cc; /* Color para los títulos */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.section-bold {
+    color: #2fb4cc; /* Color para el texto en negrita */
+}
+
+.section-list {
+    margin-left: 20px; /* Espacio para la lista */
+    color: #333; /* Color del texto de la lista */
+}
+
+.section-list li {
+    margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+.textodrama {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #000;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.videoyutu {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    max-width: 600px; /* Ancho máximo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 0 auto; /* Márgenes automáticos para centrar */
+    display: block; /* Hace que el iframe sea un bloque, permitiendo el centrado */
+}
+.video-container {
+    display: flex;
+    justify-content: center; /* Centra el video horizontalmente */
+    align-items: center; /* Centra el video verticalmente (si es necesario) */
+    padding: 20px 0;
+  }
+
+  video {
+    max-width: 100%; /* Asegura que el video no exceda el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción del video */
+  }
+audio {
+    width: 300px; /* Ajusta el ancho del reproductor */
+    margin: 20px auto; /* Centrará el reproductor si está en un contenedor */
+    display: block;
+}
+.referencias-apa {
+    color: #808080; /* Un gris estándar */
+    font-style: italic; /* Si quieres que el texto sea cursivo, opcional */
+    font-size: 14px; /* Ajusta el tamaño según tus preferencias */
+}
+.footer {
+    padding: 20px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    color: #fffdfc;
+    font-size: 15px;
+    justify-content:center;
+}
+
+.bolita {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.425); /* Bolitas semitransparentes */
+    animation: mover 20s linear infinite;
+    z-index: -1; /* Asegura que las bolitas estén detrás del contenido */
+}
+
+/* Animación para mover las bolitas */
+@keyframes mover {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(-100vh) translateX(100vw);
+    }
+}

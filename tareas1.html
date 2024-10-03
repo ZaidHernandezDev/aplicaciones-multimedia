@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+MAZ.Aplicaciones Multimedia</title>
+    <link rel="stylesheet" href="estilop1.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<body>
+    <div class="intro" id="intro">
+        <header class="header">
+            <div class="menu container">
+                <a href="#" class="logo">+ MAZ</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="Images/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Pagina de Inicio</a></li>
+                        <li><a href="#intro">Introduccion parcial</a></li>
+                        <li><a href="#tareas">Tareas</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-content container">
+
+                <h1>Tareas realizadas durante el primer parcial</h1>
+                <p>
+                    Estas son las tareas realizadas durante el peimer semestre de la 
+                    unidad de aprendizaje de "Aplicaciónes multimedia".
+                    Ademas de reconocer la importancia, conoceremos la relevancia y los componentes de la misma.
+                    Al presionar el boton de abajo, podras encotrarte con los apartados de las diferentes tareas.
+                </p>
+            </div>
+        </header>
+    </div>
+ <div class="container" id="tareas">
+    <div class="row">
+        <div class="col">
+            <h1 class="mb-3 text-center">TAREAS DEL PRIMER PARCIAL</h1>
+            <h2 class="mb-3 text-center">Estas son las tareas realizadas durante el primer parcial</h2>
+            <button class="custom-button" onclick="toggleTarea()">Ver Tarea 1: Tipos de Aplicaciones Multimedia</button>
+            <div id="tarea-info" class="hidden">
+              <div class="row">
+                <div class="col-10 m-auto">
+                    <h3>
+                        Presiona el apartado que te gustaria visualizar sobre la tarea.
+                    Lo harás  presionando las palabras debajo de este texto,
+                    en caso de querer regresar presiona "Tareas " en la parte superior derecha del menu general
+                    </h3>
+                    <br>
+                    <div class="alinear">
+                        <a href="#web">Aplicaciones Web</a>
+                        <a href="#clie">Aplicaciones Cliente-Servidor</a>
+                        <a href="#mov">Aplicaciones Móviles</a>
+                        <a href="#ubicuas">Aplicaciones Ubicuas</a>
+                    </div>
+                    <br><hr><br>
+                    <div id="web">
+                      <h4 class="section-title">Aplicaciones Web</h4>
+                      <p class="section-paragraph">
+                          Las aplicaciones web son programas accesibles desde un navegador de
+                          internet y no requieren instalación en el dispositivo. Estas
+                          aplicaciones suelen estar desarrolladas con tecnologías como HTML,
+                          CSS, JavaScript y servidores backend (PHP, Node.js, Python, etc.).
+                          Su contenido multimedia puede incluir imágenes, videos, gráficos
+                          interactivos y sonido.
+                      </p>
+                      <img src="apmul.gif" class="section-image">
+                      <p class="fw-bold section-bold">Características:</p>
+                      <ul class="section-list">
+                          <li>Accesibles desde cualquier dispositivo con conexión a Internet.</li>
+                          <li>Generalmente actualizadas centralmente por el servidor.</li>
+                          <li>Funcionan en diferentes plataformas.</li>
+                      </ul>
+                    </div>
+                </div>
+                <br><hr><br>
+              <div class="row">
+                  <div class="col-10 m-auto">
+                    <div id="clie">
+                      <h4 class="section-title">Aplicaciones Cliente-Servidor</h4>
+                      <p class="section-paragraph">
+                          Las aplicaciones cliente-servidor se dividen en dos componentes
+                          principales: el cliente, que interactúa con el usuario, y el
+                          servidor, que procesa y almacena los datos. El cliente puede ser un
+                          programa instalado en un dispositivo o una interfaz web.
+                      </p>
+                      <img src="clienteserv.png" class="section-image">
+                      <p class="fw-bold section-bold">Características:</p>
+                      <ul class="section-list">
+                          <li>La lógica de la aplicación se distribuye entre el cliente y el servidor.</li>
+                          <li>Las aplicaciones pueden usar multimedia en la interfaz del cliente.</li>
+                          <li>Ejemplos incluyen aplicaciones bancarias y juegos en línea.</li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+            <br><hr><br>
+          <div id="mov">
+              <div class="row">
+                  <div class="col-10 m-auto">
+                      <h4 class="section-title">Aplicaciones Móviles</h4>
+                      <p class="section-paragraph">
+                          Estas aplicaciones están diseñadas específicamente para dispositivos
+                          móviles, como teléfonos y tablets. Suelen aprovechar características
+                          del dispositivo, como la cámara, el GPS y la pantalla táctil.
+                      </p>
+                      <img src="apmov.gif" class="section-image">
+                      <p class="fw-bold section-bold">Características:</p>
+                      <ul class="section-list">
+                          <li>Disponibles en tiendas de aplicaciones como Google Play o App Store.</li>
+                          <li>Pueden contener contenido multimedia local o descargado.</li>
+                          <li>Ejemplos: Instagram, juegos móviles, editores de video móviles.</li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+            <br><hr><br>
+              <div class="row">
+                <div id="ubicuas">
+                  <div class="col-10 m-auto">
+                      <h4 class="section-title">Aplicaciones Ubicuas</h4>
+                      <p class="section-paragraph">
+                          Las aplicaciones ubicuas están diseñadas para integrarse en el
+                          entorno y proporcionar servicios sin que el usuario tenga que
+                          realizar acciones directas. Se basan en la computación ubicua, que
+                          busca hacer la tecnología "invisible".
+                      </p>
+                      <img src="apubicua.jpg" class="section-image">
+                      <p class="fw-bold section-bold">Características:</p>
+                      <ul class="section-list">
+                          <li>Funciona en segundo plano y se adapta al contexto y ubicación del usuario.</li>
+                          <li>Uso de múltiples dispositivos y sensores para una experiencia personalizada.</li>
+                          <li>Ejemplos: sistemas de domótica, asistentes inteligentes como Alexa o Google Home.</li>
+                      </ul>
+                  </div>
+                  <div class="referencias-apa">
+                      Xiomara, S. (s. f.). Tipologías y plataforma. Issuu. https://issuu.com/xiomara_11062006/docs/tipologias_y___plataforma/s/11805094
+                  </div>
+                </div>
+              </div>
+          </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col">
+            <button class="custom-button" onclick="toggleTarea2()">Ver Tarea 2: Componentes de una aplicacion Multimedia</button>
+            <div id="tarea-info2" class="hidden">
+              <div class="row">
+                <h3>Presiona el apartado que te gustaria visualizar sobre la tarea.
+                    Lo harás  presionando las palabras debajo de este texto,
+                    en caso de querer regresar presiona "Tareas " en la parte superior derecha del menu general </h3>
+                    <br>
+                    <div class="alinear">
+                        <a href="#img">Imagen</a>
+                        <a href="#vid">Video</a>
+                        <a href="#tex">Texto</a>
+                        <a href="#anim">Tipos de animacion</a>
+                        <a href="#audi">Audio y musicalización</a>
+                      </div>
+                    <br><hr><br>
+                    <div class="col-10 m-auto" id="img">
+                      <h4 class="section-title">IMAGEN, VIDEO Y TEXTO</h4>
+                      <p class="fw-bold section-bold">IMAGEN</p>
+                      <p class="section-paragraph">
+                        Las imágenes son elementos visuales que pueden ser estáticos o dinámicos. 
+                        En una aplicación multimedia, las imágenes se utilizan para ilustrar, informar o decorar.
+                        Pueden ser fotografías, gráficos, ilustraciones o cualquier otro tipo de representación visual.
+                        Las imágenes pueden estar en diversos formatos como JPEG, PNG, GIF, entre otros.
+
+                      </p>
+                      <img src="piolin.gif" class="section-image">
+                      <p class="fw-bold section-bold" id="vid">VIDEO</p>
+                      <p class="section-paragraph">
+                        <p class="section-paragraph">
+                            El video es una secuencia de imágenes que, al reproducirse en rápida sucesión,
+                             crean la ilusión de movimiento. Los videos pueden incluir audio y se utilizan
+                              para transmitir información de manera dinámica y atractiva.
+                               Los formatos comunes de video incluyen MP4, AVI, MOV, entre otros.
+
+                      </p>
+
+                      <div class="videoyutu">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/X8NmwFlzFnc?si=VGPdMRb9it0Ri7vF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                      <p class="fw-bold section-bold" id="tex">Texto</p>
+                      <div class="textodrama">
+                        <p class="section-paragraph" >
+                            El texto es el componente más básico y fundamental de una aplicación multimedia.
+                             Se utiliza para proporcionar información, instrucciones, descripciones y 
+                             cualquier otro tipo de contenido escrito. El texto puede estar en diferentes fuentes,
+                              tamaños y colores para mejorar la legibilidad y la estética.
+                              ¡Un ejemplo es este texto!
+    
+                          </p>
+                      </div>
+                      
+                  </div>
+              </div>
+          
+                    <br><hr><br>
+                    <div class="row" id="anim">
+                <h4 class="section-title">TIPOS DE ANIMACION</h4>
+                  <div class="col-10 m-auto">
+                      <p class="fw-bold section-bold">Explicadas en texto:</p>
+                      <ul class="section-list">
+                          <li><b>Animación 2D:</b> La animación 2D se refiere a la creación de movimiento en un 
+                            espacio bidimensional. Se utiliza en dibujos animados, videojuegos y aplicaciones
+                             educativas. Las técnicas incluyen la animación tradicional (dibujos a mano)
+                              y la animación digital (software como Adobe Animate).</li>
+                          <li><b>Animación 3D:</b> La animación 3D crea movimiento en un espacio tridimensional,
+                             proporcionando una sensación de profundidad. Se utiliza en películas,
+                              videojuegos y simulaciones. Herramientas como Blender, Maya y 3ds Max
+                               son populares para crear animaciones 3D.</li>
+                          <li><b>Stop Motion:</b> El stop motion es una técnica de animación que implica fotografiar 
+                            objetos físicos en incrementos pequeños y luego reproducir las imágenes en 
+                            secuencia para crear la ilusión de movimiento. Es común en películas de 
+                            animación con muñecos o figuras de plastilina.</li>
+                      </ul>
+                      <h2 class="fw-bold section-bold">Video explicativo sobre el tema</h2>
+                      <div class="video-container">
+                        <video controls>
+                          <source src="videoa.mp4.mp4" type="video/mp4">
+                          Tu navegador no soporta la reproducción de videos.
+                        </video>
+                      </div>
+                      <h2 class="fw-bold section-bold">Animación en stop motion hecha por el equipo</h2>
+                      <div class="video-container">
+                        <video controls>
+                          <source src="VID-20241001-WA0000.mp4" type="video/mp4">
+                          Tu navegador no soporta la reproducción de videos.
+                        </video>
+                      </div>
+                  </div>
+              </div>
+          
+                    <br><hr><br>
+                    <div class="row" id="audi">
+                <h4 class="section-title">AUDIO, MUSICALIZACION E INCIDENTALES</h4>
+                  <div class="col-10 m-auto">
+                    <audio controls loop>
+                        <source src="audio.mp3.mp3" type="audio/mpeg">
+                    </audio>
+                      <p class="fw-bold section-bold">Tipos:</p>
+                      <ul class="section-list">
+                          <li><b>Audio: </b> El audio en una aplicación multimedia puede incluir voz,
+                             efectos de sonido y música. Es crucial para mejorar la experiencia del usuario,
+                              proporcionar información adicional y crear una atmósfera adecuada.</li>
+                          <li><b>Musicalización:</b> La musicalización se refiere a la incorporación de música
+                             de fondo en una aplicación multimedia. La música puede establecer el tono,
+                              evocar emociones y mejorar la narrativa. Es importante seleccionar 
+                              música que complemente el contenido y no distraiga al usuario.</li>
+                          <li><b>Efectos de sonido:</b> Los efectos de sonido son sonidos específicos 
+                            que se utilizan para enfatizar acciones, eventos o estados en una 
+                            aplicación multimedia. Pueden ser sonidos naturales, 
+                            como el canto de los pájaros, o sonidos artificiales, 
+                            como los efectos de explosiones en videojuegos..</li>
+                      </ul>
+                  </div>
+              </div>
+          
+              <div class="row">
+                    <br><hr><br>
+                    <h4 class="section-title">PODCAST</h4>
+                  <div class="col-10 m-auto">
+                      <h4 class="section-title">¿Qué es un podcast?</h4>
+                      <audio controls loop>
+                        <source src="podcast.m4a" type="audio/mpeg">
+                    </audio>
+                      <p class="section-paragraph">
+                        Un podcast es una serie de episodios de audio digital
+                         que un usuario puede descargar y escuchar. 
+                         Los podcasts suelen estar disponibles en plataformas
+                          como Spotify, Apple Podcasts y Google Podcasts. 
+                          Pueden cubrir una amplia gama de temas, desde noticias y educación
+                           hasta entretenimiento y entrevistas. 
+                           Los podcasts son una forma efectiva de llegar a una audiencia
+                            amplia y pueden ser utilizados en aplicaciones 
+                            multimedia para proporcionar contenido adicional y 
+                            enriquecer la experiencia del usuario.
+                      </p>
+                      <img src="apubicua.jpg" class="section-image">
+                  </div>
+              </div>
+              <div class="referencias-apa">
+                Jervis, T. M. (2020, 3 julio). Recursos multimedia: concepto, tipos y ejemplos. Lifeder. https://www.lifeder.com/recursos-multimedia/
+            </div>
+            
+            <div class="referencias-apa">
+                Tema1.- Introducción a la Multimedia y Conceptos Básicos - Facultad de . . . (s. f.). https://es.readkong.com/page/tema1-introduccion-a-la-multimedia-y-conceptos-basicos-8305232        </div>
+            </div>
+          </div>
+
+
+
+
+
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col">
+        <button class="custom-button" onclick="toggleTarea3()">Ver tarea 3 Aplicaciones con inteligencia artificial</button>
+        <div id="tarea-info3" class="hidden">
+            <h3>Presiona el apartado que te gustaria visualizar sobre la tarea.
+                Lo harás  presionando las palabras debajo de este texto,
+                en caso de querer regresar presiona "Tareas " en la parte superior derecha del menu general </h3>
+                    <br>
+                    <div class="alinear">
+                    <a href="#dl">VIDEOS CON EL USO DEL DEEP LEARNING</a>
+                    <a href="#aurc">AUDIOS CON RECONOCIMIENTO DE VOZ</a>
+                    <a href="#idt">IMÁGENES CON DESCRIPCION TEXTUAL</a>
+                    <a href="#ania">ANIMACION CON INTELIGENCIA ARTIFICIAL</a>
+                  </div>
+                    <br><hr><br>
+                    <div class="row">
+              <div class="col-10 m-auto">
+                  <h4 class="section-title" id="dl">VIDEOS CON EL USO DEL DEEP LEARNING</h4>
+                  <p class="section-paragraph">
+                    El deep learning, una subdisciplina del machine learning,
+                     ha transformado la creación y edición de videos. 
+                     Utilizando redes neuronales profundas, es posible analizar y generar
+                      contenido de video con una precisión y calidad sin precedentes.
+                       Herramientas como Pictory y Synthesys permiten a los usuarios
+                        crear videos a partir de guiones o artículos,
+                         añadiendo automáticamente videoclips, subtítulos y música de fondo.
+                          Estas tecnologías no solo facilitan la producción de contenido,
+                           sino que también mejoran la accesibilidad y el alcance de los videos
+                            en plataformas digitales..
+
+                  </p>
+                  <img src="deep.jpg" class="section-image" id="aurc">
+                  <br><hr><br>
+                  <p class="fw-bold section-bold">AUDIOS CON RECONOCIMIENTO DE VOZ</p>
+                  <p class="section-paragraph">
+                    <p class="section-paragraph">
+                    El reconocimiento de voz es una de las aplicaciones más populares de la IA.
+                     Esta tecnología permite convertir el habla en texto, facilitando la interacción
+                    entre humanos y máquinas. Empresas como Google y Amazon han desarrollado
+                    asistentes virtuales que utilizan reconocimiento de voz para realizar
+                    tareas cotidianas, desde enviar mensajes hasta controlar dispositivos
+                     inteligentes en el hogar. Además, en el ámbito de la accesibilidad,
+                      el reconocimiento de voz ha permitido a personas con discapacidades
+                     comunicarse de manera más efectiva y acceder a información de manera más sencilla.
+
+                  </p>
+
+                  </p>
+                  <img src="rec.jpg" class="section-image">
+                  <br><hr><br>
+                    <p class="fw-bold section-bold" id="idt">IMÁGENES CON DESCRIPCION TEXTUAL</p>
+                  <p class="section-paragraph">
+                    <p class="section-paragraph">
+                    La generación de descripciones textuales a partir de imágenes es otra
+                     aplicación fascinante de la IA. Utilizando modelos de deep learning,
+                      es posible analizar el contenido visual de una imagen y generar
+                       una descripción precisa y coherente. Esta tecnología es especialmente
+                        útil en plataformas de redes sociales y comercio electrónico,
+                         donde las descripciones automáticas pueden mejorar la experiencia
+                          del usuario y aumentar la accesibilidad.
+                           Además, en el ámbito de la seguridad, estas herramientas 
+                           pueden ayudar a identificar objetos y personas en tiempo real,
+                            mejorando la vigilancia y la prevención de delitos.
+
+                  </p>
+
+                  </p>
+                  <img src="image.jpg" class="section-image">
+                  
+              </div>
+          </div>
+      
+                    <br><hr><br>
+                    <div class="row" id="ania">
+            <p class="fw-bold section-bold">ANIMACION CON INTELIGENCIA ARTIFICIAL</p>
+            <p class="section-paragraph">
+              <p class="section-paragraph">
+            La IA también ha impactado significativamente el campo de la animación.
+             Herramientas avanzadas permiten crear animaciones de alta calidad
+              de manera más rápida y eficiente. Por ejemplo, el uso de algoritmos
+               de deep learning puede automatizar la interpolación de cuadros,
+                suavizando el movimiento y reduciendo el tiempo de producción.
+                 Además, la IA puede generar personajes y escenarios realistas,
+                  permitiendo a los animadores centrarse en aspectos más
+                   creativos del proceso. Esta tecnología no solo beneficia
+                    a la industria del entretenimiento, sino que también tiene 
+                    aplicaciones en la educación y la publicidad, donde las
+             animaciones pueden hacer que el contenido sea más atractivo y comprensible.
+
+            </p>
+
+            </p>
+            <img src="animaia.jpg" class="section-image">
+              </div>
+              <div class="referencias-apa">
+                  Generador de videos IA gratuito | InVideo IA. (s. f.). InVideo - Online Video Creator For Content And Marketing Videos. https://invideo.io/es/crear/generatore-video-ia/
+              </div>
+              
+              <div class="referencias-apa">
+                  InnovaciónDigital, R., & InnovaciónDigital, R. (2024, 31 julio). Aprendizaje profundo o Deep Learning, qué es y qué aplicaciones tiene hoy en día. InnovaciónDigital360. https://www.innovaciondigital360.com/i-a/deep-learning-que-es-el-aprendizaje-profundo-como-funciona-y-cuales-son-los-casos-de-aplicacion/       </div>
+              </div>
+          </div>
+      
+      
+      </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<br><br>
+</body>
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-content container">
+        <h3>©Areli R.C., Marisol H.H., Zaid R.H.</h3>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</html>

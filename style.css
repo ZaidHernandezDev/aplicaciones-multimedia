@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 99vw;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Images/upiicsa.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Fondo semitransparente o ajusta según prefieras */
+  z-index: 1000; /* Asegura que el menú quede por encima de otros elementos */
+  padding: 10px 20px; /* Ajusta el padding según sea necesario */
+}
+
+.logo {
+  color: #fffdfc;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #fffdfc;
+  display: block;
+  font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+  color: #7b8dce;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 75px;
+  line-height: 80px;
+  color: #f9fafc;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.header-content p {
+  font-size: 16px;
+  color: #c5c5c5;
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #7b8dce;
+  color: #f9fafc;
+  text-transform: uppercase;
+}
+
+.btn-1:hover {
+  background-color: #434d71;
+}
+
+/* Parciales */
+.parcial {
+  display: flex;
+}
+
+.parcial-1 {
+  width: 50%;
+  padding: 100px 250px 100px 100px;
+  background-color: #dae0f8;
+}
+
+.parcial-2 {
+  background-image: url(Images/p1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.parcial-3 {
+  background-image: url(Images/p2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.parcial-4 {
+  background-image: url(Images/p3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.tareas {
+  height: 100vh;
+  background-color: #dae0f8;
+}
+
+.title-cards {
+  padding: 90px 0;
+}
+
+.title-cards h2 {
+  font-size: 40px;
+  line-height: 70px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  color: #323337;
+  margin: 25px 0 45px 0;
+}
+.card {
+  width: 30%; /* Cada tarjeta ocupa un 30% del ancho */
+  margin: 0; /* Elimina márgenes laterales para ajustar el espacio */
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+  z-index: 1;
+}
+.container-card {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between; /* O usa space-around si prefieres más espacio */
+  align-items: flex-start; /* Para alinear las tarjetas en la parte superior */
+  gap: 20px; /* Espacio entre las tarjetas */
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+}
+
+.card .contenido-card {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido-card h3 {
+  margin-bottom: 15px;
+  color: #272323;
+}
+
+.card .contenido-card p {
+  line-height: 1.8;
+  color: #272323;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card .contenido-card a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+  background: #2fb4cc;
+  color: #fff;
+}
+/* Integrantes */
+.team {
+  height: 100vh;
+  padding: 50px;
+  background-color: #b7c1ec;
+  position: relative;
+}
+
+.team-content h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #323337;
+  text-transform: uppercase;
+  padding: 0 250px;
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.team-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.team-container {
+  padding: 0;
+  text-align: center;
+}
+
+.team-container img {
+  margin-top: 20px;
+  /* width: 350px; */
+  max-height: 50vh;
+}
+
+.cuest {
+  overflow: auto;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 20px; /* Opcional: puedes ajustar el espacio alrededor */
+}
+
+iframe {
+  width: 1000px; /* Ancho del iframe */
+  height: 3012px; /* Altura del iframe */
+  border: 0;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  background-color: #000000;
+}
+
+.footer-content {
+  display: flex;
+  color: #fffdfc;
+  font-size: 15px;
+  justify-content: center;
+}
+
+#ir-resultados{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#resultados{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dae0f8;
+}
+
+#resultados hr{
+  width: 100%;
+}
+
+.img-pregunta {
+  width: 500px;
+  margin: 0 auto;
+}
