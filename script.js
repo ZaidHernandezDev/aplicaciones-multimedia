@@ -37,3 +37,26 @@ function toggleTarea3() {
     const tareaInfo3 = document.getElementById("tarea-info3");
     tareaInfo3.classList.toggle("hidden");
 }
+function runCode() {
+    const htmlCode = document.getElementById('htmlCode').value;
+    const cssCode = document.getElementById('cssCode').value;
+    const jsCode = document.getElementById('jsCode').value;
+
+    const iframe = document.getElementById('output');
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+    // Crear la estructura de la página dentro del iframe
+    iframeDoc.open();
+    iframeDoc.write(`
+        <html>
+            <head>
+                <style>${cssCode}</style>
+            </head>
+            <body>
+                ${htmlCode}
+                <script>${jsCode}<\/script>
+            </body>
+        </html>
+    `);
+    iframeDoc.close();
+}

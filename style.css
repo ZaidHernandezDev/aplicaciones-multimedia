@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 99vw;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -149,21 +149,12 @@ body {
   width: 50%;
 }
 
-.tareas {
-  height: 100vh;
-  background-color: #dae0f8;
-}
-
-.title-cards {
-  padding: 90px 0;
-}
-
-.title-cards h2 {
-  font-size: 40px;
+h2 {
+  font-size: 55px;
   line-height: 70px;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
@@ -183,19 +174,11 @@ p {
   z-index: 1;
 }
 .container-card {
-  padding: 0 50px;
   display: flex;
   justify-content: space-between; /* O usa space-around si prefieres más espacio */
   align-items: flex-start; /* Para alinear las tarjetas en la parte superior */
   gap: 20px; /* Espacio entre las tarjetas */
-  max-height: 50vh;
-  overflow: auto;
 }
-
-.card img {
-  object-fit: cover;
-}
-
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
@@ -240,9 +223,14 @@ p {
   color: #fff;
 }
 /* Integrantes */
-.team {
+
+#presentacion {
   height: 100vh;
-  padding: 50px;
+  min-height: 800px;
+}
+
+.team {
+  padding: 50px 0;
   background-color: #b7c1ec;
   position: relative;
 }
@@ -252,40 +240,97 @@ p {
   line-height: 70px;
   color: #323337;
   text-transform: uppercase;
-  padding: 0 250px;
-  margin: 50px 0px;
+  margin: 5vh 0;
   text-align: center;
 }
 
 .team-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 50px;
 }
 
 .team-container {
-  padding: 0;
-  text-align: center;
+  width: 27%;
 }
 
 .team-container img {
-  margin-top: 20px;
-  /* width: 350px; */
-  max-height: 50vh;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.team-group h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5vh 0;
+}
+
+#ministerios {
+  height: 100vh;
+  min-height: 800px;
+}
+
+#ministerios .container-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#ministerios .ministerios .title-cards {
+  text-align: center;
+  margin: 10vh 0;
+}
+
+#ministerios .card {
+  width: 30%;
+  height: 500px;
+  margin: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+  z-index: 1;
+}
+
+#ir-resultados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ir-resultados a {
+  display: inline-block;
+  padding: 10px;
+  margin: 25px 0;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
 }
 
 .cuest {
-  overflow: auto;
+  width: 100%; /* Asegura que el div ocupe todo el ancho */
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
   padding: 20px; /* Opcional: puedes ajustar el espacio alrededor */
 }
-
 iframe {
-  width: 1000px; /* Ancho del iframe */
+  width: 640px; /* Ancho del iframe */
   height: 3012px; /* Altura del iframe */
   border: 0;
+}
+
+#res-enc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Footer */
@@ -299,28 +344,4 @@ iframe {
   color: #fffdfc;
   font-size: 15px;
   justify-content: center;
-}
-
-#ir-resultados{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-#resultados{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #dae0f8;
-}
-
-#resultados hr{
-  width: 100%;
-}
-
-.img-pregunta {
-  width: 500px;
-  margin: 0 auto;
 }
