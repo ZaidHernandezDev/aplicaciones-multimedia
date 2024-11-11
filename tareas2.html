@@ -1,288 +1,949 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>+MAZ.Aplicaciones Multimedia</title>
-    <link rel="stylesheet" href="estilop2.css">
-</head>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilop2.css" />
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet"
+  />
 
-<body>
+  <body>
     <div class="intro" id="intro">
-        <header class="header">
-            <div class="menu">
-                <a href="#" class="logo">+ MAZ</a>
-                <input type="checkbox" id="menu" />
-                <label for="menu">
-                    <img src="Images/menu.png" class="menu-icono" alt="">
-                </label>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="index.html">Pagina de Inicio</a></li>
-                        <li><a href="#intro">Introduccion parcial</a></li>
-                        <li><a href="#tareas">Tareas</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <header class="header">
+        <div class="menu">
+          <a href="#" class="logo">+ MAZ</a>
+          <input type="checkbox" id="menu" />
+          <label for="menu">
+            <img src="Images/menu.png" class="menu-icono" alt="" />
+          </label>
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Pagina de Inicio</a></li>
+              <li><a href="#intro">Introduccion parcial</a></li>
+              <li><a href="#tareas">Tareas</a></li>
+            </ul>
+          </nav>
+        </div>
 
-            <div class="header-content container">
-
-                <h1>Tareas realizadas durante el segundo parcial</h1>
-                <p>
-                    Estas son las tareas realizadas durante el segundo semestre de la 
-                    unidad de aprendizaje de "Aplicaciónes multimedia".
-                    Ademas de reconocer la importancia, conoceremos la relevancia y los componentes de la misma.
-                    Al presionar el boton de abajo, podras encotrarte con los apartados de las diferentes tareas.
-                </p>
-            </div>
-        </header>
+        <div class="header-content container">
+          <h1>Tareas realizadas durante el segundo parcial</h1>
+          <p>
+            Estas son las tareas realizadas durante el segundo semestre de la
+            unidad de aprendizaje de "Aplicaciónes multimedia". Ademas de
+            reconocer la importancia, conoceremos la relevancia y los
+            componentes de la misma. Al presionar el boton de abajo, podras
+            encotrarte con los apartados de las diferentes tareas.
+          </p>
+        </div>
+      </header>
     </div>
- <div class="container" id="tareas">
-    <div class="row">
+    <div class="container" id="tareas">
+      <div class="row">
         <div class="col">
-            <h1 class="mb-3 text-center">TAREAS DEL SEGUNDO PARCIAL</h1>
-            <h2 class="mb-3 text-center">Estas son las tareas realizadas durante el segundo parcial</h2>
-            <button class="custom-button" onclick="toggleTarea()">Ver Tarea 1: Lenguajes de programación gráficos y web</button>
-            <div id="tarea-info" class="hidden">
+          <h1 class="mb-3 text-center">TAREAS DEL SEGUNDO PARCIAL</h1>
+          <h2 class="mb-3 text-center">
+            Estas son las tareas realizadas durante el segundo parcial
+          </h2>
+          <button class="custom-button" onclick="toggleTarea()">
+            Ver Tarea 1: Las tecnologías de desarrollo multimedia
+          </button>
+          <div id="tarea-info" class="hidden">
+            <div class="row">
+              <div class="col-10 m-auto">
+                <h3>
+                  Presiona el apartado que te gustaria visualizar sobre la
+                  tarea. Lo harás presionando las palabras debajo de este texto,
+                  en caso de querer regresar presiona "Tareas " en la parte
+                  superior derecha del menu general
+                </h3>
+                <br />
+                <div class="alinear">
+                  <a href="#legraf">Lenguajes de Programación Gráficos</a>
+                  <a href="#leweb">Lenguajes de programación Web</a>
+                  <a href="#ini">Introduccion al tema</a>
+                  <a href="#ide">Entornos de Desarrollo Integrados (IDE)</a>
+                  <a href="#fraweb">Frameworks de Desarrollo Web</a>
+                  <a href="#serloc">Servidores Locales</a>
+                  <a href="#ambientes_moviles">Ambientes Móviles</a>
+                  <a href="#arqu_mult"
+                    >Arquitectura de las Aplicaciones Multimedia</a
+                  >
+                </div>
+                <br />
+                <hr />
+                <br />
+                <div id="legraf">
+                  <h4 class="section-title">
+                    Lenguajes de programación gráficos.
+                  </h4>
+                  <p class="section-paragraph">
+                    Los lenguajes de programación gráficos permiten desarrollar
+                    aplicaciones que incluyen elementos visuales y gráficos
+                    interactivos, esenciales para el diseño de interfaces de
+                    usuario (UI) y experiencias gráficas. En este contexto,
+                    destacan lenguajes que permiten crear gráficos en 2D y 3D,
+                    videojuegos, animaciones y aplicaciones multimedia.
+                  </p>
+                  <iframe
+                    src="https://www.1001juegos.com/embed/new-year-makeup-trends"
+                    style="width: 100%; height: 100%"
+                    frameborder="0"
+                    allow="gamepad *;"
+                  ></iframe>
+                  <ul class="section-list">
+                    <li>
+                      Processing: Es un lenguaje y entorno de desarrollo basado
+                      en Java, diseñado para el arte visual y el diseño gráfico.
+                      Processing facilita la creación de gráficos, animaciones y
+                      aplicaciones interactivas, siendo muy utilizado en
+                      educación y proyectos artísticos.
+                    </li>
+                    <li>
+                      OpenGL: Es una interfaz de programación de aplicaciones
+                      (API) estándar para gráficos 2D y 3D. Permite a los
+                      desarrolladores trabajar con hardware gráfico para generar
+                      gráficos complejos y es utilizado en videojuegos,
+                      simulaciones y aplicaciones de diseño.
+                    </li>
+                    <li>
+                      SVG (Scalable Vector Graphics): Aunque técnicamente no es
+                      un lenguaje de programación, SVG es un lenguaje basado en
+                      XML que se utiliza para describir gráficos vectoriales. Es
+                      muy utilizado en el diseño web porque permite crear
+                      imágenes escalables que no pierden calidad en diferentes
+                      tamaños de pantalla
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <hr />
+              <br />
               <div class="row">
                 <div class="col-10 m-auto">
-                    <h3>
-                        Presiona el apartado que te gustaria visualizar sobre la tarea.
-                    Lo harás  presionando las palabras debajo de este texto,
-                    en caso de querer regresar presiona "Tareas " en la parte superior derecha del menu general
-                    </h3>
-                    <br>
-                    <div class="alinear">
-                        <a href="#legraf">Lenguajes de Programación Gráficos</a>
-                        <a href="#leweb">Lenguajes de programación Web</a>
-                    </div>
-                    <br><hr><br>
-                    <div id="legraf">
-                      <h4 class="section-title">Lenguajes de programación gráficos.</h4>
-                      <p class="section-paragraph">
-                        Los lenguajes de programación gráficos permiten desarrollar
-                         aplicaciones que incluyen elementos visuales y gráficos 
-                         interactivos, esenciales para el diseño de interfaces de 
-                         usuario (UI) y experiencias gráficas. En este contexto,
-                          destacan lenguajes que permiten crear gráficos en 2D y 3D,
-                           videojuegos, animaciones y aplicaciones multimedia.
-                      </p>
-                      <iframe src="https://www.1001juegos.com/embed/new-year-makeup-trends" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>                      <ul class="section-list">
-                          <li>Processing: Es un lenguaje y entorno de desarrollo basado en Java,
-                             diseñado para el arte visual y el diseño gráfico. Processing facilita
-                              la creación de gráficos, animaciones y aplicaciones interactivas,
-                               siendo muy utilizado en educación y proyectos artísticos.</li>
-                          <li>OpenGL: Es una interfaz de programación de aplicaciones (API)
-                             estándar para gráficos 2D y 3D. Permite a los desarrolladores
-                              trabajar con hardware gráfico para generar gráficos complejos
-                               y es utilizado en videojuegos, simulaciones y aplicaciones de diseño.</li>
-                          <li>SVG (Scalable Vector Graphics): Aunque técnicamente no es un lenguaje
-                             de programación, SVG es un lenguaje basado en XML que se utiliza
-                              para describir gráficos vectoriales. Es muy utilizado en el
-                               diseño web porque permite crear imágenes escalables que no
-                                pierden calidad en diferentes tamaños de pantalla</li>
-                      </ul>
-                    </div>
-                </div>
-                <br><hr><br>
-              <div class="row">
-                  <div class="col-10 m-auto">
-                    <div id="leweb">
-                      <h4 class="section-title">Lenguajes de Programación Web</h4>
-                      <p class="section-paragraph">
-                        Los lenguajes de programación web se utilizan para crear
-                         y gestionar sitios web dinámicos y aplicaciones web
-                          interactivas. Estos lenguajes permiten desarrollar
-                           tanto el frontend (lo que ve el usuario) como el
-                            backend (procesos en el servidor).
-                      </p>
-                      <img src="proweb.png" class="section-image">
-                      <p class="fw-bold section-bold">Ejemplos:</p>
-                      <ul class="section-list">
-                          <li>HTML (HyperText Markup Language): Es el lenguaje estándar
-                             para crear la estructura y contenido de una página web.
-                              HTML define la disposición de texto, imágenes,
-                               videos y otros elementos multimedia</li>
-                          <li>CSS (Cascading Style Sheets): Se utiliza para definir
-                             el estilo visual de una página web, controlando la apariencia
-                              de los elementos HTML. Con CSS, los desarrolladores pueden
-                               modificar fuentes, colores, disposición de los elementos
-                                y otros aspectos estéticos.</li>
-                          <li>JavaScript: Es el lenguaje de programación más
-                             importante para el desarrollo web, permitiendo la creación
-                              de sitios dinámicos e interactivos. JavaScript puede
-                               ejecutar acciones en el navegador del usuario, como la
-                                validación de formularios, la creación de gráficos
-                         interactivos o la actualización de contenido sin recargar la página</li>
-                         <li>PHP: Es un lenguaje del lado del servidor ampliamente utilizado
-                             para el desarrollo de sitios web dinámicos. PHP permite
-                              interactuar con bases de datos, procesar formularios
-                               y generar contenido dinámico</li>
-                        <li>Python: Aunque es más conocido como un lenguaje de propósito
-                             general, Python se utiliza en el desarrollo
-                              web mediante frameworks como Django o Flask, permitiendo
-                               crear aplicaciones robustas y escalables</li>
-                      </ul>
+                  <div id="leweb">
+                    <h4 class="section-title">Lenguajes de Programación Web</h4>
+                    <p class="section-paragraph">
+                      Los lenguajes de programación web se utilizan para crear y
+                      gestionar sitios web dinámicos y aplicaciones web
+                      interactivas. Estos lenguajes permiten desarrollar tanto
+                      el frontend (lo que ve el usuario) como el backend
+                      (procesos en el servidor).
+                    </p>
+                    <img src="proweb.png" class="section-image" />
+                    <p class="fw-bold section-bold">Ejemplos:</p>
+                    <ul class="section-list">
+                      <li>
+                        HTML (HyperText Markup Language): Es el lenguaje
+                        estándar para crear la estructura y contenido de una
+                        página web. HTML define la disposición de texto,
+                        imágenes, videos y otros elementos multimedia
+                      </li>
+                      <li>
+                        CSS (Cascading Style Sheets): Se utiliza para definir el
+                        estilo visual de una página web, controlando la
+                        apariencia de los elementos HTML. Con CSS, los
+                        desarrolladores pueden modificar fuentes, colores,
+                        disposición de los elementos y otros aspectos estéticos.
+                      </li>
+                      <li>
+                        JavaScript: Es el lenguaje de programación más
+                        importante para el desarrollo web, permitiendo la
+                        creación de sitios dinámicos e interactivos. JavaScript
+                        puede ejecutar acciones en el navegador del usuario,
+                        como la validación de formularios, la creación de
+                        gráficos interactivos o la actualización de contenido
+                        sin recargar la página
+                      </li>
+                      <li>
+                        PHP: Es un lenguaje del lado del servidor ampliamente
+                        utilizado para el desarrollo de sitios web dinámicos.
+                        PHP permite interactuar con bases de datos, procesar
+                        formularios y generar contenido dinámico
+                      </li>
+                      <li>
+                        Python: Aunque es más conocido como un lenguaje de
+                        propósito general, Python se utiliza en el desarrollo
+                        web mediante frameworks como Django o Flask, permitiendo
+                        crear aplicaciones robustas y escalables
+                      </li>
+                    </ul>
                   </div>
-              </div>
-            </div>
-            <br><hr><br>
-              <div class="row">
-                <div id="ubicuas">
-                  <div class="referencias-apa">
-                    Bradberry, D. (2020). Learning JavaScript: Add Sparkle and Life to Your Web Pages. O'Reilly Media.                  </div>
                 </div>
               </div>
+              <br />
+              <hr />
+              <br />
+              <div class="col-10 m-auto" id="ini">
+                <h4 class="section-title">Ambientes de Desarrollo para Web</h4>
+                <p class="fw-bold section-bold">Introducción del tema</p>
+                <p class="section-paragraph">
+                  Un ambiente de desarrollo web es un conjunto de herramientas y
+                  tecnologías que permiten a los desarrolladores crear, probar y
+                  desplegar aplicaciones y sitios web. Estos ambientes incluyen
+                  editores de código, servidores locales, bases de datos y otros
+                  recursos que facilitan la creación de software.
+                </p>
+                <p class="fw-bold section-bold" id="ide">
+                  Entornos de Desarrollo Integrados (IDE)
+                </p>
+                <p class="section-paragraph"></p>
+                <p class="section-paragraph">
+                  Los IDE son aplicaciones que ofrecen todas las herramientas
+                  necesarias para el desarrollo en un solo programa. Estos
+                  incluyen editores de código, depuradores, herramientas de
+                  compilación y simulación de servidores.
+                </p>
+                <h6>
+                  Un ejemplo de depurador de codigo te lo dejaremos a
+                  continuación, con html, JavaScript y css
+                </h6>
+                <div class="container1">
+                  <div class="editor">
+                    <label for="htmlCode">HTML</label>
+                    <textarea
+                      id="htmlCode"
+                      placeholder="Escribe tu HTML aquí"
+                    ></textarea>
+
+                    <label for="cssCode">CSS</label>
+                    <textarea
+                      id="cssCode"
+                      placeholder="Escribe tu CSS aquí"
+                    ></textarea>
+
+                    <label for="jsCode">JavaScript</label>
+                    <textarea
+                      id="jsCode"
+                      placeholder="Escribe tu JavaScript aquí"
+                    ></textarea>
+
+                    <button onclick="runCode()">Ejecutar Código</button>
+                  </div>
+                  <br />
+                  <p class="fw-bold section-bold" id="fraweb">
+                    Salida de código
+                  </p>
+                  <iframe id="output"></iframe>
+                </div>
+
+                <p class="fw-bold section-bold" id="fraweb">
+                  Frameworks de Desarrollo Web
+                </p>
+
+                <p class="section-paragraph">
+                  Un framework es un conjunto de herramientas y bibliotecas que
+                  simplifican el desarrollo de aplicaciones web proporcionando
+                  una estructura estándar.
+                </p>
+
+                <ul>
+                  <li>
+                    <h4>React</h4>
+                    Es una biblioteca de JavaScript desarrollada por Facebook
+                    que se utiliza para construir interfaces de usuario. React
+                    permite crear aplicaciones web dinámicas y de una sola
+                    página mediante el uso de componentes reutilizables.
+                  </li>
+                  <li>
+                    <h4>Django</h4>
+                    Es un framework web de Python que permite crear aplicaciones
+                    escalables y seguras de forma rápida. Incluye
+                    características como un sistema de administración de base de
+                    datos, autenticación de usuarios y herramientas de
+                    desarrollo de APIs.
+                  </li>
+                  <li>
+                    <h4>Angular</h4>
+                    Es un framework de JavaScript desarrollado por Google que
+                    permite crear aplicaciones web de una sola página (SPA) con
+                    características avanzadas como el enrutamiento, la
+                    validación de formularios y la gestión del estado de la
+                    aplicación.
+                  </li>
+                </ul>
+              </div>
+              <div class="image-container1">
+                <img src="frame.png" alt="Frameworks" class="zoom-image" />
+              </div>
+            </div>
+
+            <br />
+            <hr />
+            <br />
+            <div class="row" id="serloc">
+              <h4 class="section-title">Servidores Locales</h4>
+              <div class="col-10 m-auto">
+                <p class="fw-bold section-bold">
+                  Los servidores locales permiten a los desarrolladores probar
+                  su código en un entorno similar al de producción sin necesidad
+                  de desplegar el sitio en un servidor remoto.
+                </p>
+                <ul class="section-list">
+                  <li>
+                    <b>XAMPP:</b> Es un paquete que incluye Apache (servidor
+                    web), MySQL (base de datos) y PHP. Con XAMPP, los
+                    desarrolladores pueden ejecutar aplicaciones web dinámicas
+                    en su máquina local, probando todas las características
+                    antes de desplegar el sitio en línea
+                  </li>
+                  <li>
+                    <b>MAMP:</b> Similar a XAMPP, MAMP es una solución local
+                    para el desarrollo web en macOS. Incluye Apache, MySQL, y
+                    PHP, permitiendo a los desarrolladores probar sitios y
+                    aplicaciones web localmente.
+                  </li>
+                </ul>
+                <h2 class="fw-bold section-bold">
+                  Video explicativo sobre el tema
+                </h2>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/A5lc3mtS5Kk?si=2p79v7H81l7ONho9"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-10 m-auto">
+              <h4 class="section-title" id="ambientes_moviles">
+                Ambientes de Desarrollo para Dispositivos Móviles
+              </h4>
+              <p>
+                El desarrollo de aplicaciones multimedia para dispositivos
+                móviles se centra en entornos y herramientas específicas que
+                permiten optimizar aplicaciones para smartphones y tablets.
+                Existen dos enfoques principales para desarrollar aplicaciones
+                móviles multimedia: nativo y multiplataforma.
+              </p>
+              <br />
+              <p class="fw-bold section-bold">Desarrollo Nativo:</p>
+              <p>
+                Android Studio (Java/Kotlin): Es el entorno oficial para el
+                desarrollo en Android, que soporta Java y Kotlin. Proporciona
+                herramientas integradas para la gestión de archivos multimedia y
+                el manejo de gráficos, animaciones y renderizado de video.
+                <br /><br />
+                Xcode (Swift/Objective-C): Para dispositivos iOS, Apple
+                proporciona Xcode, que permite la integración directa de
+                gráficos y videos a través de APIs nativas como AVFoundation y
+                Core Animation, optimizando la eficiencia de las aplicaciones en
+                los dispositivos de Apple.<br /><br />
+              </p>
+              <p class="fw-bold section-bold">Desarrollo Multiplataforma:</p>
+              <p>
+                Flutter (Dart): Flutter permite crear aplicaciones de alto
+                rendimiento para Android, iOS y web. Ofrece un conjunto de
+                widgets gráficos y la capacidad de manejar multimedia de forma
+                interactiva. <br /><br />
+                React Native (JavaScript): Permite la creación de aplicaciones
+                nativas para iOS y Android usando JavaScript y tiene una
+                comunidad extensa de módulos para la integración de componentes
+                multimedia como audio y video.<br /><br />
+                Unity: Si el proyecto incluye animaciones 3D o gráficos
+                avanzados, Unity es una opción excelente para desarrollos
+                móviles orientados al entretenimiento, con soporte para video y
+                sonido interactivo, realidad aumentada (AR) y virtual (VR).<br /><br />
+                Apache Cordova y Ionic: Son frameworks híbridos que usan HTML,
+                CSS y JavaScript. Son útiles para aplicaciones multimedia menos
+                exigentes, ya que permiten integrar audio y video en
+                aplicaciones ligeras y rápidas.<br /><br />
+              </p>
+              <p class="fw-bold section-bold">
+                Herramientas de Soporte y APIs:
+              </p>
+              <p>
+                APIs Multimedia: OpenGL ES para gráficos 3D en dispositivos
+                móviles, OpenAL para audio, y frameworks específicos como
+                MediaPlayer de Android y AVFoundation de iOS. <br /><br />
+                Herramientas de diseño y prototipado: Figma, Sketch y Adobe XD
+                son ampliamente usados en la creación de interfaces interactivas
+                multimedia, permitiendo colaborar en la creación de
+                prototipos.<br /><br />
+                Sistemas de gestión de contenido (CMS): Algunos entornos de
+                desarrollo utilizan CMS como WordPress o Joomla junto con
+                aplicaciones móviles para mostrar contenido multimedia de forma
+                remota, facilitando actualizaciones de contenido sin la
+                necesidad de recompilar la aplicación.<br /><br />
+              </p>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div class="col-10 m-auto">
+              <h4 class="section-title" id="arqu_mult">
+                Arquitectura de las Aplicaciones Multimedia
+              </h4>
+              <p>
+                La arquitectura de una aplicación multimedia puede variar
+                dependiendo de los componentes, el propósito y la complejidad
+                del contenido que se desea desplegar. Sin embargo, los modelos
+                arquitectónicos más comunes son:
+              </p>
+              <p class="fw-bold section-bold">Arquitectura Cliente-Servidor:</p>
+              <p>
+                En este tipo de arquitectura, la aplicación móvil funciona como
+                un cliente que interactúa con un servidor remoto para recuperar,
+                procesar y almacenar contenido multimedia. Este enfoque es ideal
+                para aplicaciones que dependen de una base de datos en línea
+                para mostrar datos de forma dinámica, como servicios de
+                streaming o aplicaciones de contenido visual y de audio.
+              </p>
+              <p class="fw-bold section-bold">Componentes:</p>
+              <p>
+                Servidor: Maneja el almacenamiento de datos y el procesamiento
+                de solicitudes, y es responsable de la entrega de contenido
+                multimedia. Cliente: El dispositivo móvil que recibe, procesa y
+                muestra el contenido multimedia descargado desde el servidor.
+                Ejemplos: Aplicaciones como YouTube, Netflix y Spotify usan esta
+                arquitectura para gestionar grandes volúmenes de contenido
+                multimedia desde un servidor centralizado.
+              </p>
+              <p class="fw-bold section-bold">
+                Arquitectura en la Nube (Cloud-based):
+              </p>
+              <p>
+                Con el uso creciente de la nube, muchas aplicaciones multimedia
+                aprovechan la infraestructura de proveedores de servicios en la
+                nube, como AWS, Google Cloud o Microsoft Azure, para gestionar y
+                almacenar contenido de gran tamaño. Esto permite a las
+                aplicaciones manejar multimedia sin comprometer la capacidad de
+                almacenamiento del dispositivo. Ejemplos: Aplicaciones de
+                edición de fotos en la nube, plataformas de almacenamiento
+                multimedia como Google Photos y editores de video en línea.
+              </p>
+              <p class="fw-bold section-bold">
+                Arquitectura de Microservicios:
+              </p>
+              <p>
+                Los microservicios son unidades modulares que dividen las
+                funciones de una aplicación multimedia en diferentes servicios.
+                Esto permite mejorar la escalabilidad y el mantenimiento de
+                aplicaciones multimedia complejas. Ejemplos: Servicios de
+                edición de imágenes, componentes de reconocimiento de voz y
+                módulos de streaming de video que operan como microservicios
+                independientes y se comunican mediante APIs.
+              </p>
+              <p class="fw-bold section-bold">
+                Arquitectura basada en Eventos:
+              </p>
+              <p>
+                En una arquitectura orientada a eventos, la aplicación responde
+                a ciertos eventos o acciones, como toques en pantalla, comandos
+                de voz o gestos, que disparan procesos de multimedia. Esto es
+                muy común en aplicaciones interactivas como juegos o
+                simuladores. Ejemplos: Aplicaciones de realidad aumentada que
+                responden a la detección de imágenes o a movimientos de cámara
+                para superponer contenido multimedia en tiempo real.
+              </p>
+              <p class="fw-bold section-bold">Arquitectura Híbrida:</p>
+              <p>
+                Combina las arquitecturas cliente-servidor y la arquitectura en
+                la nube, de modo que ciertos componentes de la aplicación pueden
+                almacenarse en la nube, mientras que otros se descargan y
+                almacenan localmente en el dispositivo. Ejemplos: Aplicaciones
+                de e-learning o entretenimiento, donde el contenido principal
+                puede estar en la nube pero permite acceso offline a los
+                archivos previamente descargados en el dispositivo.
+              </p>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div class="row">
+              <div id="ubicuas">
+                <div class="referencias-apa">
+                  Duckett, J. (2011). HTML & CSS: Design and Build Websites.
+                  John Wiley & Sons.
+                </div>
+
+                <div class="referencias-apa">
+                  McFarland, D. (2015). JavaScript & jQuery: The Missing Manual.
+                  O'Reilly Media.
+                </div>
+                <div class="referencias-apa">
+                  Bradberry, D. (2020). Learning JavaScript: Add Sparkle and
+                  Life to Your Web Pages. O'Reilly Media.
+                </div>
+              </div>
+            </div>
           </div>
-            </div>
-            </div>
         </div>
+      </div>
     </div>
 
-<div class="container">
-    <div class="row">
+    <div class="container">
+      <div class="row">
         <div class="col-1"></div>
         <div class="col">
-            <button class="custom-button" onclick="toggleTarea2()">Ver Tarea 2: Ambientes de Desarrollo para Web</button>
-            <div id="tarea-info2" class="hidden">
-              <div class="row">
-                <h3>Presiona el apartado que te gustaria visualizar sobre la tarea.
-                    Lo harás  presionando las palabras debajo de este texto,
-                    en caso de querer regresar presiona "Tareas " en la parte superior derecha del menu general </h3>
-                    <br>
-                    <div class="alinear">
-                        <a href="#ini">Introduccion al tema</a>
-                        <a href="#ide">Entornos de Desarrollo Integrados (IDE)</a>
-                        <a href="#fraweb">Frameworks de Desarrollo Web</a>
-                        <a href="#serloc">Servidores Locales</a>
-                      </div>
-                    <br><hr><br>
-                    <div class="col-10 m-auto" id="ini">
-                      <h4 class="section-title">Ambientes de Desarrollo para Web</h4>
-                      <p class="fw-bold section-bold">Introducción del tema</p>
-                      <p class="section-paragraph">
-                        Un ambiente de desarrollo web es un conjunto de herramientas
-                         y tecnologías que permiten a los desarrolladores crear, probar
-                    y desplegar aplicaciones y sitios web. Estos ambientes
-                    incluyen editores de código, servidores locales,
-                     bases de datos y otros recursos que facilitan la creación de software.
-
-                      </p>
-                      <p class="fw-bold section-bold" id="ide">Entornos de Desarrollo Integrados (IDE)</p>
-                      <p class="section-paragraph">
-                        <p class="section-paragraph">
-                        Los IDE son aplicaciones que ofrecen todas las herramientas
-                        necesarias para el desarrollo en un solo programa.
-                        Estos incluyen editores de código, depuradores,
-                         herramientas de compilación y simulación de servidores.
-
-                      </p>
-<h6>Un ejemplo de depurador de codigo te lo dejaremos a continuación, con html, JavaScript y css</h6>
-                      <div class="container1">
-                        <div class="editor">
-                            <label for="htmlCode">HTML</label>
-                            <textarea id="htmlCode" placeholder="Escribe tu HTML aquí"></textarea>
-                
-                            <label for="cssCode">CSS</label>
-                            <textarea id="cssCode" placeholder="Escribe tu CSS aquí"></textarea>
-                
-                            <label for="jsCode">JavaScript</label>
-                            <textarea id="jsCode" placeholder="Escribe tu JavaScript aquí"></textarea>
-                
-                            <button onclick="runCode()">Ejecutar Código</button>
-                        </div>
-                        <br>
-                        <p class="fw-bold section-bold" id="fraweb">Salida de código</p>
-                        <iframe id="output"></iframe>
-                    </div>
-
-
-
-                      <p class="fw-bold section-bold" id="fraweb">Frameworks de Desarrollo Web</p>
-                    
-                        <p class="section-paragraph" >
-                        Un framework es un conjunto de herramientas y bibliotecas
-                         que simplifican el desarrollo de aplicaciones web proporcionando
-                          una estructura estándar.
-    
-                          </p>
-                      
-                          <ul>
-                            <li><h4>React</h4> Es una biblioteca de JavaScript desarrollada
-                                 por Facebook que se utiliza para construir interfaces
-                                  de usuario. React permite crear aplicaciones web
-                                   dinámicas y de una sola página mediante el uso
-                                    de componentes reutilizables.</li>
-                            <li><h4>Django</h4> Es un framework web de Python que permite
-                             crear aplicaciones escalables y seguras de forma rápida.
-                             Incluye características como un sistema de administración
-                              de base de datos, autenticación de usuarios y herramientas de desarrollo de APIs.</li>
-                            <li><h4>Angular</h4>Es un framework de JavaScript desarrollado por
-                                 Google que permite crear aplicaciones web de una sola página
-                                  (SPA) con características avanzadas como el enrutamiento,
-                                   la validación de formularios y la gestión
-                                    del estado de la aplicación.</li>
-                        </ul>
-                  </div>
-                  <div class="image-container1">
-                    <img src="frame.png" alt="Frameworks" class="zoom-image">
-                </div>
-                
-              </div>
-          
-
-
-
-                    <br><hr><br>
-                    <div class="row" id="serloc">
-                <h4 class="section-title">Servidores Locales</h4>
-                  <div class="col-10 m-auto">
-                      <p class="fw-bold section-bold">Los servidores locales permiten a los desarrolladores 
-                        probar su código en un entorno similar al de producción sin necesidad de desplegar
-                         el sitio en un servidor remoto.</p>
-                      <ul class="section-list">
-                          <li><b>XAMPP:</b> Es un paquete que incluye Apache (servidor web), MySQL
-                             (base de datos) y PHP. Con XAMPP, los desarrolladores pueden ejecutar
-                              aplicaciones web dinámicas en su máquina local, probando todas las
-                               características antes de desplegar el sitio en línea</li>
-                          <li><b>MAMP:</b> Similar a XAMPP, MAMP es una solución local
-                             para el desarrollo web en macOS. Incluye Apache, MySQL,
-                              y PHP, permitiendo a los desarrolladores probar
-                               sitios y aplicaciones web localmente.</li>
-                      </ul>
-                      <h2 class="fw-bold section-bold">Video explicativo sobre el tema</h2>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/A5lc3mtS5Kk?si=2p79v7H81l7ONho9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>
-              </div>
-          
-                    <br><hr><br>
-                    
-              <div class="referencias-apa">
-                Duckett, J. (2011). HTML & CSS: Design and Build Websites. John Wiley & Sons.
+          <button class="custom-button" onclick="toggleTarea3()">
+            Ver Tarea 2:Tecnologías Multimedia para la Web
+          </button>
+          <div id="tarea-info3" class="hidden">
+            <h3>
+              Presiona el apartado que te gustaria visualizar sobre la tarea. Lo
+              harás presionando las palabras debajo de este texto, en caso de
+              querer regresar presiona "Tareas " en la parte superior derecha
+              del menu general
+            </h3>
+            <br />
+            <div class="alinear">
+              <a href="#viajes_3d_3d">Viajes Virtuales (2D y 3D)</a>
+              <a href="#carruseles">Carruseles de Contenido</a>
+              <a href="#gestores">Gestores de Contenido</a>
+              <a href="#servicios">Servicios en la Nube</a>
             </div>
-            
+            <br />
+            <hr />
+            <br />
+            <div id="viajes_2d_3d">
+              <h4 class="section-title">Viajes Virtuales (2D y 3D)</h4>
+              <p>
+                Los viajes virtuales en 2D y 3D son simulaciones o
+                representaciones interactivas que permiten a los usuarios
+                "explorar" un espacio desde una perspectiva en primera o tercera
+                persona. Son populares en sitios web de turismo, bienes raíces,
+                museos y educación, ofreciendo una experiencia inmersiva sin
+                salir del hogar.
+              </p>
+              <p class="fw-bold section-bold">Viajes Virtuales en 2D:</p>
+              <p>
+                Utilizan fotografías, videos y animaciones en dos dimensiones.
+                Las imágenes de 360 grados y los videos panorámicos son ejemplos
+                comunes. Tecnologías: HTML5 y CSS3: Permiten la creación de
+                vistas de imágenes en 360°, animaciones y transiciones que
+                facilitan la navegación entre diferentes "escenas" del tour.
+                JavaScript: Frameworks como jQuery o Three.js permiten efectos
+                interactivos en 2D, control de animaciones y efectos de
+                desplazamiento (scroll). WebGL y Canvas: La API Canvas permite
+                manipular gráficos en 2D en tiempo real. Plugins específicos:
+                Herramientas como Pannellum permiten crear tours virtuales en 2D
+                con imágenes panorámicas de 360°.
+              </p>
+              <h3>Viaje Virtual 2D</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.382235434429!2d-99.09442242401934!3d19.395883981875556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc2e3efc321b%3A0xabf8454acb3a3a99!2sUPIICSA%20%E2%80%93%20Unidad%20Profesional%20Interdisciplinaria%20de%20Ingenier%C3%ADa%20y%20Ciencias%20Sociales%20y%20Administrativas%20IPN!5e0!3m2!1ses-419!2smx!4v1731354594313!5m2!1ses-419!2smx"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <p class="fw-bold section-bold">Viajes Virtuales en 3D:</p>
+              <p>
+                Crean entornos tridimensionales interactivos que ofrecen una
+                perspectiva inmersiva en profundidad. Tecnologías: WebGL y
+                Three.js: Permiten el modelado y renderizado de gráficos 3D en
+                el navegador. Three.js proporciona una capa de abstracción sobre
+                WebGL, facilitando la creación de modelos y escenas 3D. A-Frame:
+                Un framework para crear experiencias de realidad virtual y
+                aumentada en el navegador usando HTML. Es ideal para desarrollar
+                tours 3D interactivos. Unity y Unreal Engine: Si bien son
+                motores tradicionales para videojuegos, pueden exportar
+                experiencias interactivas en 3D que se pueden embeber en sitios
+                web. Ejemplos de uso: Google Street View y plataformas de bienes
+                raíces donde se ofrecen vistas en 3D de propiedades.
+              </p>
+              <h3>Viaje Virtual 3D</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1601405558474!6m8!1m7!1sCAoSLEFGMVFpcE1GT1Z6c2RvTVlJbXp2M05nQ05KU0c4eE94V2dtdGVFRXpjNE9C!2m2!1d19.4340074!2d-99.1330648!3f198.18!4f0!5f0.7820865974627469"
+                width="600"
+                height="450"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div id="carruseles">
+              <h4 class="section-title">Carruseles de Contenido</h4>
+              <p>
+                Un carrusel de contenido es un elemento multimedia común en
+                sitios web y aplicaciones, que permite mostrar múltiples
+                imágenes, videos o fragmentos de información en una misma área
+                interactiva. Los carruseles son útiles para destacar contenido
+                importante, mostrar productos o noticias de forma atractiva.
+              </p>
+              <p class="fw-bold section-bold">
+                Características de un Carrusel:
+              </p>
+              <p>
+                Interactividad: Permiten desplazarse manualmente o de forma
+                automática entre diferentes diapositivas. Versatilidad: Se
+                pueden usar para contenido de imagen, video, texto y enlaces.
+                Responsividad: Los carruseles deben ser responsivos, adaptándose
+                a distintos tamaños de pantalla. Tecnologías: HTML, CSS y
+                JavaScript: Son esenciales para construir la estructura del
+                carrusel, aplicarle estilos visuales y hacer que sea
+                interactivo. Bibliotecas y Frameworks: Bootstrap: Proporciona un
+                carrusel incorporado, altamente personalizable y responsivo.
+                Swiper.js: Una biblioteca de JavaScript popular para crear
+                carruseles modernos, con soporte para gestos táctiles, ideal
+                para dispositivos móviles. Slick: Una biblioteca ligera que
+                permite crear carruseles responsivos con diversas opciones de
+                configuración y efectos de transición. Atributos de
+                accesibilidad: Deben agregarse a los carruseles, como etiquetas
+                aria-live y role="region", para mejorar la experiencia de los
+                usuarios que usan lectores de pantalla. Ejemplos de uso: Tiendas
+                en línea: Mostrar productos destacados, nuevas colecciones o
+                promociones. Portales de noticias: Destacar noticias
+                principales, eventos o artículos recomendados. Sitios de
+                portafolio: Mostrar trabajos destacados o proyectos recientes.
+              </p>
+              <h3>Carrusel en CodePen</h3>
+              <iframe
+                height="500"
+                style="width: 100%"
+                scrolling="no"
+                title="Carrusel de contenido"
+                src="https://codepen.io/openai_user/pen/MWKBdRY"
+                frameborder="no"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div id="gestores">
+              <h4 class="section-title">Gestores de Contenido</h4>
+              <p>
+                Los gestores de contenido (CMS, por sus siglas en inglés) son
+                plataformas que permiten a los usuarios crear, administrar y
+                modificar contenido en un sitio web sin necesidad de
+                conocimientos avanzados de programación. Los CMS facilitan la
+                actualización de contenido multimedia y permiten una gestión
+                eficiente de textos, imágenes, videos y otros tipos de medios.
+              </p>
+              <p class="fw-bold section-bold">Características Principales:</p>
+              <p>
+                Facilidad de uso: Interfaces amigables y personalizables que
+                permiten crear y organizar contenido. Gestión de Multimedia:
+                Subida y edición de imágenes, videos y otros recursos
+                multimedia. Control de versiones: Permite el seguimiento y la
+                gestión de versiones de contenido. Roles y permisos: Control de
+                acceso para varios usuarios con diferentes permisos, como
+                editores, administradores y escritores. Ejemplos Populares de
+                CMS: WordPress: Es el CMS más usado a nivel mundial, con plugins
+                como WPBakery y Elementor para gestionar multimedia de forma
+                avanzada. Joomla: Ideal para sitios complejos que requieren
+                módulos de multimedia avanzados. Drupal: Potente y flexible,
+                adecuado para proyectos de gran escala. Ghost y Strapi:
+                Plataformas ligeras para contenido dinámico, enfocadas en blogs
+                y aplicaciones de contenido con APIs. Tecnologías Integradas en
+                CMS: Bases de Datos: MySQL, PostgreSQL o MongoDB se usan para
+                almacenar contenido multimedia. Lenguajes y Frameworks: PHP
+                (WordPress y Joomla), Node.js (Strapi y Ghost), Ruby on Rails
+                (Spina CMS). Plugins y Extensiones: La mayoría de los CMS
+                ofrecen plugins y extensiones que permiten añadir carruseles de
+                imágenes, videos, galerías, optimización de SEO multimedia, etc.
+                Aplicaciones de CMS: Portales de noticias: Como The New York
+                Times, donde se necesita contenido multimedia dinámico y
+                frecuente. Páginas de empresas: Para actualizar galerías,
+                noticias y catálogos de productos fácilmente. E-learning:
+                Plataformas educativas que necesitan gestionar videos, podcasts,
+                documentos y otros contenidos.
+              </p>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div id="servicios">
+              <h4 class="section-title">Servicios en la Nube</h4>
+              <p>
+                Los servicios en la nube son fundamentales en la entrega de
+                contenido multimedia en la web, ya que permiten almacenar,
+                gestionar y distribuir archivos multimedia de gran tamaño sin
+                necesidad de infraestructura local.
+              </p>
+
+              <p class="fw-bold section-bold">Tipos de Servicios en la Nube:</p>
+              <p>
+                Almacenamiento en la Nube (IaaS): Servicios como Amazon S3,
+                Google Cloud Storage y Azure Blob Storage proporcionan
+                almacenamiento escalable para contenido multimedia.
+                Procesamiento en la Nube (PaaS): Servicios como AWS Elastic
+                Beanstalk, Google App Engine y Azure App Services que permiten
+                ejecutar aplicaciones de procesamiento de multimedia sin
+                necesidad de infraestructura física. Servicios de CDN (Red de
+                Distribución de Contenido): Como Cloudflare, Akamai y Amazon
+                CloudFront, que permiten la entrega rápida de contenido
+                multimedia mediante servidores distribuidos en todo el mundo,
+                reduciendo la latencia y mejorando la experiencia del usuario.
+                Ventajas de los Servicios en la Nube para la Multimedia:
+                Escalabilidad: Permiten manejar grandes cantidades de contenido
+                multimedia y tráfico. Acceso global: Permiten el acceso rápido a
+                contenido desde distintas ubicaciones geográficas. Ahorro de
+                costos: Evitan la inversión en infraestructura física para
+                almacenar y gestionar contenido multimedia. Actualizaciones
+                automáticas: La mayoría de los servicios en la nube actualizan
+                sus herramientas y recursos sin intervención del usuario,
+                mejorando la seguridad y el rendimiento. Aplicaciones de
+                Servicios en la Nube: Servicios de Streaming: Plataformas como
+                Netflix y Spotify almacenan sus archivos de video y audio en la
+                nube y los distribuyen a través de CDNs. Almacenamiento y
+                edición de multimedia: Google Photos, Adobe Creative Cloud y
+                Canva utilizan la nube para almacenar, procesar y editar
+                imágenes y videos. E-commerce: Almacenan imágenes de productos,
+                videos y otros recursos multimedia en la nube para carga rápida
+                en plataformas como Amazon.
+              </p>
+            </div>
+
+            <br />
+            <hr />
+            <br />
+
             <div class="referencias-apa">
-                McFarland, D. (2015). JavaScript & jQuery: The Missing Manual. O'Reilly Media.            </div>
+              Duckett, J. (2011). HTML & CSS: Design and Build Websites. John
+              Wiley & Sons.
+            </div>
+
+            <div class="referencias-apa">
+              McFarland, D. (2015). JavaScript & jQuery: The Missing Manual.
+              O'Reilly Media.
+            </div>
           </div>
-
-</div>
-    </div></div>
-
-
-
-</div>
-
-
-
-<br><br>
-</body>
-<!--Footer-->
-<footer class="footer">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col">
+          <button class="custom-button" onclick="toggleTarea2()">
+            Ver Tarea 3:Realidad Mixta en Entornos Multimedia
+          </button>
+          <div id="tarea-info2" class="hidden">
+            <h3>
+              Presiona el apartado que te gustaria visualizar sobre la tarea. Lo
+              harás presionando las palabras debajo de este texto, en caso de
+              querer regresar presiona "Tareas " en la parte superior derecha
+              del menu general
+            </h3>
+            <br />
+            <div class="alinear">
+              <a href="#viajes_3d_3d">Viajes Virtuales (2D y 3D)</a>
+              <a href="#carruseles">Carruseles de Contenido</a>
+              <a href="#gestores">Gestores de Contenido</a>
+              <a href="#servicios">Servicios en la Nube</a>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <p>
+              La realidad mixta (RM) combina elementos del mundo real y virtual
+              en una sola experiencia interactiva. A diferencia de la realidad
+              aumentada (que superpone imágenes virtuales sobre el mundo real) o
+              la realidad virtual (que es totalmente inmersiva), la realidad
+              mixta permite que los elementos virtuales y reales interactúen de
+              manera dinámica en tiempo real. Su aplicación en entornos
+              multimedia está transformando industrias como la educación, el
+              entretenimiento, la medicina y el diseño, al ofrecer experiencias
+              inmersivas y prácticas en entornos simulados y reales.
+            </p>
+            <div id="componentes_realidad_mixta">
+              <h4 class="section-title">
+                Componentes de Realidad Mixta en Aplicaciones Multimedia
+              </h4>
+              <p>
+                Las aplicaciones de realidad mixta dependen de varios
+                componentes clave para combinar de manera efectiva el mundo
+                físico con el mundo digital. Hardware: Dispositivos de
+                Visualización: Los cascos o gafas de realidad mixta, como
+                Microsoft HoloLens o Magic Leap, permiten ver elementos
+                virtuales sobrepuestos al entorno real. Estos dispositivos
+                integran sensores para rastrear el entorno y posicionar objetos
+                virtuales con precisión. Sensores y Cámaras: Los sensores de
+                profundidad y cámaras ayudan a capturar datos del entorno físico
+                en tiempo real, mapeando el espacio y permitiendo que los
+                objetos virtuales se "comporten" de acuerdo con el contexto.
+                Controladores y Guantes Hápticos: Estos dispositivos permiten a
+                los usuarios interactuar con el entorno virtual mediante
+                movimientos y gestos naturales, proporcionando retroalimentación
+                táctil que mejora la inmersión. Software: Plataformas de
+                Desarrollo: Frameworks como Unity y Unreal Engine son populares
+                en el desarrollo de realidad mixta, ya que permiten la creación
+                de gráficos 3D y el desarrollo de interacciones complejas. API y
+                SDK de Realidad Mixta: Como el Mixed Reality Toolkit (MRTK) de
+                Microsoft, que proporciona herramientas para la creación de
+                aplicaciones de realidad mixta. Otros SDK, como ARCore de Google
+                y ARKit de Apple, también son compatibles con funciones de
+                realidad mixta. Inteligencia Artificial (IA): Los algoritmos de
+                IA ayudan a interpretar los datos del entorno, reconocer gestos,
+                rostros y objetos, y adaptar la experiencia de RM al contexto en
+                tiempo real. Entorno Digital: Los elementos virtuales en RM se
+                crean en un espacio 3D y se integran en el entorno físico del
+                usuario. Esto requiere modelado en 3D y uso de gráficos en
+                tiempo real, así como animaciones y físicas avanzadas que imiten
+                el comportamiento real de los objetos.
+              </p>
+            </div>
+            <div id="animacion_3d_simulacion">
+              <h4 class="section-title">La Animación 3D y la Simulación</h4>
+              <p>
+                La animación 3D y la simulación son técnicas esenciales en las
+                aplicaciones multimedia de realidad mixta, ya que permiten dar
+                vida a objetos, personajes y escenarios virtuales, haciendo que
+                se comporten de manera realista. Animación 3D: La animación 3D
+                crea el movimiento de objetos y personajes en un entorno
+                tridimensional. Para aplicaciones de realidad mixta, los modelos
+                animados se integran con el entorno físico y deben reaccionar de
+                manera natural a los cambios de perspectiva del usuario.
+                Herramientas de Animación: Herramientas como Blender, Maya y 3ds
+                Max son fundamentales para la creación de animaciones y
+                simulaciones 3D. Estas plataformas permiten modelar, texturizar
+                y animar objetos con precisión. Motores de Renderizado en Tiempo
+                Real: La animación en RM depende de renderizado en tiempo real
+                para que las interacciones y cambios se reflejen de inmediato.
+                Unity y Unreal Engine son populares debido a sus capacidades de
+                renderizado 3D en tiempo real y compatibilidad con RM.
+                Simulación: Las simulaciones utilizan la animación 3D y la
+                física para recrear experiencias realistas o prácticas. En RM,
+                las simulaciones pueden ser prácticas de laboratorio,
+                operaciones de maquinaria o pruebas de productos en entornos
+                controlados virtuales. Física en Tiempo Real: La simulación
+                requiere cálculos físicos para representar cómo interactúan los
+                objetos virtuales entre sí y con el entorno físico. Aplicaciones
+                de Simulación: En medicina, la simulación permite a los
+                estudiantes practicar procedimientos en un entorno controlado.
+                En la ingeniería, las simulaciones ayudan a probar el
+                comportamiento de prototipos. 2.3.3 La Impresión 3D en
+                Aplicaciones Multimedia La impresión 3D permite crear objetos
+                físicos a partir de modelos digitales. En entornos multimedia,
+                la impresión 3D ofrece una manera tangible de experimentar y
+                presentar prototipos o productos creados en RM. Modelado para
+                Impresión 3D: Los modelos creados en programas como Tinkercad,
+                Blender y Fusion 360 se pueden exportar a formatos compatibles
+                con impresoras 3D (STL o OBJ). Estos modelos pueden ser
+                utilizados en RM para explorar sus características antes de ser
+                impresos. Conversión para RM y Impresión: Los archivos 3D que se
+                diseñan para impresión suelen necesitar ajustes para garantizar
+                que funcionen bien tanto en entornos virtuales como físicos.
+                Esto incluye detalles en textura, escala y compatibilidad con la
+                impresora 3D. Aplicaciones en Prototipos y Educación: La
+                impresión 3D se usa en prototipos industriales, donde los
+                modelos virtuales de RM se pueden imprimir para una revisión
+                física del diseño. En educación, la RM junto con la impresión 3D
+                permite a los estudiantes experimentar con modelos complejos,
+                como órganos, estructuras arquitectónicas y moléculas, que luego
+                pueden tocar y examinar físicamente. Integración en Entornos de
+                Realidad Mixta: La realidad mixta permite visualizar cómo se
+                verá un modelo antes de imprimirlo, proporcionando una
+                representación precisa de su tamaño, forma y características.
+              </p>
+              <h3>Modelo Animado 3D</h3>
+              <div class="sketchfab-embed-wrapper">
+                <iframe
+                  title="Ferrary 512 S Berlinetta 1969"
+                  frameborder="0"
+                  allowfullscreen
+                  mozallowfullscreen="true"
+                  webkitallowfullscreen="true"
+                  allow="autoplay; fullscreen; xr-spatial-tracking"
+                  xr-spatial-tracking
+                  execution-while-out-of-viewport
+                  execution-while-not-rendered
+                  web-share
+                  src="https://sketchfab.com/models/fad37a780e24420bb6337987b623687a/embed"
+                >
+                </iframe>
+                <p
+                  style="
+                    font-size: 13px;
+                    font-weight: normal;
+                    margin: 5px;
+                    color: #4a4a4a;
+                  "
+                >
+                  <a
+                    href="https://sketchfab.com/3d-models/ferrary-512-s-berlinetta-1969-fad37a780e24420bb6337987b623687a?utm_medium=embed&utm_campaign=share-popup&utm_content=fad37a780e24420bb6337987b623687a"
+                    target="_blank"
+                    rel="nofollow"
+                    style="font-weight: bold; color: #1caad9"
+                  >
+                    Ferrary 512 S Berlinetta 1969
+                  </a>
+                  by
+                  <a
+                    href="https://sketchfab.com/chijikoff.roma?utm_medium=embed&utm_campaign=share-popup&utm_content=fad37a780e24420bb6337987b623687a"
+                    target="_blank"
+                    rel="nofollow"
+                    style="font-weight: bold; color: #1caad9"
+                  >
+                    chyzhykov.roman
+                  </a>
+                  on
+                  <a
+                    href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=fad37a780e24420bb6337987b623687a"
+                    target="_blank"
+                    rel="nofollow"
+                    style="font-weight: bold; color: #1caad9"
+                    >Sketchfab</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div id="aplicaciones_simulacion">
+              <h4 class="section-title">
+                Aplicaciones de Simulación con Realidad Mixta
+              </h4>
+              <p>
+                Las aplicaciones de simulación en realidad mixta son
+                herramientas poderosas para capacitación, diseño,
+                entretenimiento y educación, ya que permiten recrear escenarios
+                complejos de manera realista e interactiva. Entrenamiento y
+                Capacitación: La realidad mixta permite entrenar habilidades
+                complejas y específicas en un entorno seguro y controlado. Por
+                ejemplo, en la medicina, se pueden simular cirugías para que los
+                estudiantes practiquen técnicas en un entorno sin riesgos. En la
+                aviación y en la industria automotriz, la simulación de RM
+                permite a los pilotos y técnicos aprender sobre el uso de
+                máquinas y herramientas complejas antes de operar en el mundo
+                real. Diseño de Productos y Prototipos: La RM se utiliza en la
+                ingeniería y el diseño para probar y optimizar prototipos
+                virtuales antes de fabricarlos físicamente. Esto permite ajustar
+                diseños y funcionalidades sin desperdiciar recursos. Por
+                ejemplo, un arquitecto puede "caminar" por el modelo de un
+                edificio en RM y ajustar elementos de diseño según lo vea
+                necesario, haciendo cambios en tiempo real. Educación y
+                Simulaciones de Ciencias: En las aulas, la RM permite a los
+                estudiantes visualizar y manipular conceptos complejos como
+                modelos moleculares, sistemas solares, simulaciones químicas y
+                estructuras biológicas. En la historia y la geografía, la RM
+                permite "viajar" en el tiempo o explorar lugares geográficos sin
+                salir del salón, proporcionando una experiencia educativa
+                inmersiva. Entretenimiento y Videojuegos: En la industria del
+                entretenimiento, los videojuegos y las experiencias inmersivas
+                en RM crean una capa de interacción entre el jugador y el
+                entorno, donde los objetos y personajes virtuales responden a
+                las acciones físicas del usuario. Ejemplos incluyen simulaciones
+                de deportes, experiencias de escape room virtual y videojuegos
+                de rol donde los jugadores pueden interactuar con su entorno
+                como si estuvieran físicamente en el juego.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+  </body>
+  <!--Footer-->
+  <footer class="footer">
     <div class="footer-content container">
-        <h3>©Areli R.C., Marisol H.H., Zaid R.H.</h3>
+      <h3>©Areli R.C., Marisol H.H., Zaid R.H.</h3>
     </div>
   </footer>
-<!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </html>

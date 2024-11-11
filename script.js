@@ -22,7 +22,7 @@ function crearBolitas() {
 }
 
 // Llamar a la función al cargar la página
-crearBolitas();
+// crearBolitas();
 
 // Función para mostrar y ocultar la información de la tarea
 function toggleTarea() {

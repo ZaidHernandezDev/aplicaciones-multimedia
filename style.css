@@ -333,6 +333,11 @@ iframe {
   flex-direction: column;
 }
 
+.img-pregunta {
+  width: 100%;  
+  max-width: 500px;
+}
+
 /* Footer */
 .footer {
   padding: 20px 0;
@@ -344,4 +349,21 @@ iframe {
   color: #fffdfc;
   font-size: 15px;
   justify-content: center;
+}
+
+.examen-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.examen-link:hover {
+  background-color: #0056b3;
 }
