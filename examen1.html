@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>+MAZ.Aplicaciones Multimedia</title>
-        <link rel="stylesheet" href="estiloex1.css">
-        
-    </head>
-    <div class="intro" id="intro">
-        <header class="header">
-            <div class="menu container">
-                <a href="#" class="logo">+ MAZ</a>
-                <input type="checkbox" id="menu" />
-                <label for="menu">
-                    <img src="Images/menu.png" class="menu-icono" alt="">
-                </label>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="index.html">Pagina de Inicio</a></li>
-                        <li><a href="#intro">Introduccion parcial</a></li>
-                        <li><a href="#tareas">Tareas</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <h1>Contador de Salidas de la Ventana</h1>
-            <p>Veces que saliste de la ventana: <span id="contador">0</span></p>
-            <div class="menu-container">
-                <p>¿Qué es una aplicación web y cuáles son sus características principales?</p>
-                <div class="menu-options">
-                    <label class="option">
-                        <input type="radio" name="var1" value="0">
-                        Programas que requieren instalación en el dispositivo y se actualizan localmente.
-                    </label>
-                    <label class="option">
-                        <input type="radio" name="var1" value="5">
-                        Programas accesibles desde un navegador sin necesidad de instalación, funcionando en diferentes plataformas.
-                    </label>
-                    <label class="option">
-                        <input type="radio" name="var1" value="0">
-                        Programas que solo funcionan en dispositivos móviles y requieren conexión continua.
-                    </label>
-                </div>
-              </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>+MAZ.Aplicaciones Multimedia</title>
+    <link rel="stylesheet" href="style.css" />
 
-            
-        </header>
-    </div>
-    <body>
-        <button class="custom-button" onclick="calculo()">Terminar exámen</button>
-    </body>
-<script src="contador.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("YUhztedM26YuhUOcK");
+    </script>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu">
+        <a href="#" class="logo">+ MAZ</a>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Pagina de Inicio</a></li>
+            <li><a href="#intro">Introduccion parcial</a></li>
+            <li><a href="#tareas">Tareas</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-content container">
+        <h1>Examen de prueba</h1>
+        <p>
+          Este examen permite al alumno evaluar y reforzar sus conocimientos
+          adquiridos en la materia, identificando áreas de fortaleza y aspectos
+          que necesitan mejorar. Ideal para prepararse y afianzar conceptos
+          clave.
+        </p>
+        <a href="#examen" class="btn-1"> Ir al examen </a>
+      </div>
+    </header>
+    <form id="examen">
+      <h2>Examen</h2>
+      <p class="alerta">
+        ATENCIÓN: CERRAR LA PESTAÑA HARÁ QUE SE PIERDA TU PROGRESO
+      </p>
+      <p>Veces que saliste de la ventana: <span id="contador">0</span></p>
+      <div id="preguntas-examen" class="container">
+        <!-- Este contenido se llena de manera dinámica con javascript  -->
+        <input type="hidden" name="reply_to" id="reply_to" value="ramirezhernandezzaidalberto@gmail.com">
+      </div>
+      <button class="btn-1 btn-examen" id="enviar">
+        Terminar examen
+      </button>
+    </form>
+  </body>
+  <script src="contador.js"></script>
+  <script src="cargar-examen.js"></script>
 </html>

@@ -1,0 +1,332 @@
+{
+    "examen": {
+        "tareas": [
+            {
+                "id": 1,
+                "titulo": "Tipos de aplicaciones multimedia",
+                "preguntas": [
+                    {
+                        "id": 1,
+                        "pregunta": "¿Cuál es una característica principal de las aplicaciones web?",
+                        "opciones": [
+                            "Solo funcionan en dispositivos móviles",
+                            "No requieren instalación en el dispositivo",
+                            "No utilizan HTML ni CSS"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "id": 2,
+                        "pregunta": "¿Qué componente procesa y almacena datos en una aplicación cliente-servidor?",
+                        "opciones": [
+                            "El cliente",
+                            "El navegador",
+                            "El servidor"
+                        ],
+                        "correcta": 2
+                    },
+                    {
+                        "id": 3,
+                        "pregunta": "¿Cuál es un ejemplo de aplicación móvil?",
+                        "opciones": [
+                            "Instagram",
+                            "Microsoft Word",
+                            "Un asistente de voz"
+                        ],
+                        "correcta": 0
+                    },
+                    {
+                        "id": 4,
+                        "pregunta": "¿Qué describe mejor una aplicación ubicua?",
+                        "opciones": [
+                            "Se integra en el entorno y actúa sin intervención del usuario",
+                            "Requiere una conexión constante a Internet",
+                            "Está diseñada exclusivamente para dispositivos móviles"
+                        ],
+                        "correcta": 0
+                    },
+                    {
+                        "id": 5,
+                        "pregunta": "¿Qué tecnología permite a las aplicaciones web ser accesibles desde cualquier dispositivo?",
+                        "opciones": [
+                            "PHP",
+                            "Conexión a Internet",
+                            "Python"
+                        ],
+                        "correcta": 1
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "titulo": "Componentes de una aplicación multimedia",
+                "preguntas": [
+                    {
+                        "id": 1,
+                        "pregunta": "¿Qué formato de imagen es comúnmente utilizado para gráficos transparentes?",
+                        "opciones": [
+                            "JPEG",
+                            "PNG",
+                            "GIF"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "id": 2,
+                        "pregunta": "¿Qué crea la ilusión de movimiento en un video?",
+                        "opciones": [
+                            "La velocidad del sonido",
+                            "La sucesión rápida de imágenes",
+                            "La calidad de la cámara"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "id": 3,
+                        "pregunta": "¿Qué se utiliza principalmente para proporcionar información en una aplicación multimedia?",
+                        "opciones": [
+                            "Texto",
+                            "Animación",
+                            "Audio"
+                        ],
+                        "correcta": 0
+                    },
+                    {
+                        "id": 4,
+                        "pregunta": "¿Qué tipo de animación proporciona una sensación de profundidad?",
+                        "opciones": [
+                            "2D",
+                            "Stop Motion",
+                            "3D"
+                        ],
+                        "correcta": 2
+                    },
+                    {
+                        "id": 5,
+                        "pregunta": "¿Cuál es un ejemplo de musicalización en multimedia?",
+                        "opciones": [
+                            "Un diálogo en video",
+                            "Música de fondo en un menú",
+                            "Un sonido de alerta"
+                        ],
+                        "correcta": 1
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "titulo": "Aplicaciones con inteligencia artificial",
+                "preguntas": [
+                    {
+                        "id": 1,
+                        "pregunta": "¿Qué permite crear videos a partir de guiones con herramientas como Pictory?",
+                        "opciones": [
+                            "Machine Learning",
+                            "Deep Learning",
+                            "Procesamiento de datos"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "id": 2,
+                        "pregunta": "¿Qué tecnología convierte el habla en texto?",
+                        "opciones": [
+                            "Inteligencia Artificial",
+                            "Reconocimiento de voz",
+                            "Machine Learning"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "id": 3,
+                        "pregunta": "¿Qué se logra con la generación de descripciones a partir de imágenes?",
+                        "opciones": [
+                            "Mejorar la accesibilidad",
+                            "Reducir el tiempo de carga",
+                            "Crear animaciones"
+                        ],
+                        "correcta": 0
+                    },
+                    {
+                        "id": 4,
+                        "pregunta": "¿Qué automatiza la interpolación de cuadros en animaciones?",
+                        "opciones": [
+                            "Modelos gráficos",
+                            "Deep Learning",
+                            "Análisis de datos"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "id": 5,
+                        "pregunta": "¿Qué herramienta facilita la creación de personajes realistas en animación?",
+                        "opciones": [
+                            "Reconocimiento de voz",
+                            "Interpolación manual",
+                            "IA"
+                        ],
+                        "correcta": 2
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "titulo": "Las tecnologías del desarrollo multimedia",
+                "preguntas": [
+                    {
+                        "id": 1,
+                        "pregunta": "¿Cuál es el principal enfoque del lenguaje Processing?",
+                        "opciones": [
+                            "Diseño de sistemas operativos",
+                            "Arte visual y diseño gráfico",
+                            "Desarrollo de aplicaciones móviles"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "id": 2,
+                        "pregunta": "¿Qué característica destaca en Processing?",
+                        "opciones": [
+                            "Gestión avanzada de bases de datos",
+                            "Facilidad para crear animaciones y gráficos interactivos",
+                            "Optimización de código para servidores web"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "id": 3,
+                        "pregunta": "Processing está basado en:",
+                        "opciones": [
+                            "Java",
+                            "Python",
+                            "C++"
+                        ],
+                        "correcta": 0
+                    },
+                    {
+                        "id": 4,
+                        "pregunta": "¿En qué campo es más utilizado Processing?",
+                        "opciones": [
+                            "Inteligencia artificial",
+                            "Educación y proyectos artísticos",
+                            "Administración de redes"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "id": 5,
+                        "pregunta": "¿Qué tipo de aplicaciones facilita desarrollar Processing?",
+                        "opciones": [
+                            "Aplicaciones gráficas y visuales",
+                            "Plataformas de comercio electrónico",
+                            "Redes sociales"
+                        ],
+                        "correcta": 0
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "titulo": "Tecnologías Multimedia para la Web",
+                "preguntas": [
+                    {
+                        "pregunta": "¿Cuál es la función principal de HTML?",
+                        "opciones": [
+                            "Definir la estructura y contenido de una página web",
+                            "Controlar la apariencia visual de una página",
+                            "Realizar cálculos en el servidor"
+                        ],
+                        "correcta": 0
+                    },
+                    {
+                        "pregunta": "¿Qué lenguaje se utiliza para estilizar elementos HTML?",
+                        "opciones": [
+                            "CSS",
+                            "JavaScript",
+                            "PHP"
+                        ],
+                        "correcta": 0
+                    },
+                    {
+                        "pregunta": "¿Cuál de estos lenguajes es más importante para la interactividad en la web?",
+                        "opciones": [
+                            "HTML",
+                            "CSS",
+                            "JavaScript"
+                        ],
+                        "correcta": 2
+                    },
+                    {
+                        "pregunta": "¿Qué característica destaca en JavaScript?",
+                        "opciones": [
+                            "Ejecución en el servidor",
+                            "Creación de sitios interactivos",
+                            "Control de servidores remotos"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "pregunta": "¿Qué tecnología se utiliza para actualizar contenido sin recargar la página?",
+                        "opciones": [
+                            "PHP",
+                            "JavaScript",
+                            "CSS"
+                        ],
+                        "correcta": 1
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "titulo": "Realidad mixta en entornos multimedia",
+                "preguntas": [
+                    {
+                        "pregunta": "¿Qué incluye típicamente un entorno de desarrollo integrado (IDE)?",
+                        "opciones": [
+                            "Un servidor en la nube",
+                            "Herramientas como editores de código y depuradores",
+                            "Gestores de contenido"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "pregunta": "¿Qué es un framework de desarrollo web?",
+                        "opciones": [
+                            "Un servidor web para producción",
+                            "Una estructura estándar con herramientas y bibliotecas",
+                            "Un lenguaje de programación específico"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "pregunta": "¿Cuál es una función principal de un servidor local como XAMPP?",
+                        "opciones": [
+                            "Probar código en un entorno de producción",
+                            "Ejecutar aplicaciones web dinámicas localmente",
+                            "Optimizar bases de datos remotas"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "pregunta": "¿Qué componente no está incluido en XAMPP?",
+                        "opciones": [
+                            "Apache",
+                            "Node.js",
+                            "MySQL"
+                        ],
+                        "correcta": 1
+                    },
+                    {
+                        "pregunta": "¿Cuál es una ventaja de los servidores locales?",
+                        "opciones": [
+                            "Evitar el uso de bases de datos",
+                            "Simular un entorno similar al de producción",
+                            "Eliminar la necesidad de lenguajes backend"
+                        ],
+                        "correcta": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

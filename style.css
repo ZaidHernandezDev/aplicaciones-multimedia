@@ -367,3 +367,41 @@ iframe {
 .examen-link:hover {
   background-color: #0056b3;
 }
+
+#examen{
+  margin-top: 50px;
+  text-align: center;  
+}
+
+#examen p{
+  margin: 10px 0;
+}
+
+#examen .alerta {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 20px;
+}
+
+#preguntas-examen{
+  border: 1px solid black;
+}
+
+.seccion-tarea:not(:first-of-type){
+  border-top: 1px solid black;
+}
+
+.seccion-tarea{
+  padding: 10px 0;
+}
+
+.opciones .opcion{
+  display: block;
+  margin: 10px 5px;
+  text-align: left;
+}
+
+.btn-examen{
+  margin: 25px;
+  border: 1px solid black;
+}
