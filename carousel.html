@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>+MAZ.Aplicaciones Multimedia</title>
+    <link rel="stylesheet" href="stylecarousel.css" />
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+<body>
+    <!--Header-->
+    <div class="intro" id="intro">
+        <header class="header">
+            <div class="menu">
+                <a href="#" class="logo">+ MAZ</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="Images/menu.png" class="menu-icono" alt="" />
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Pagina de Inicio</a></li>
+                        <li><a href="#intro">Introduccion parcial</a></li>
+                        <li><a href="#tareas">Tareas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!--Carousel-->
+    <div class="slider">
+        <div class="item">
+            <h1>Lenguajes de Programación</h1>
+            Se destacan lenguajes como Processing, OpenGL y SVG, que permiten 
+            desarrollar aplicaciones con elementos visuales y gráficos interactivos. 
+            Web: Se mencionan HTML, CSS, JavaScript, PHP y Python, que son esenciales 
+            para crear y gestionar sitios web dinámicos y aplicaciones web interactivas.
+        </div>
+        <div class="item">
+            <h1>Entornos de desarrollo integrados(IDE)</h1>
+            Se describen herramientas que ofrecen todas las herramientas necesarias para 
+            el desarrollo en un solo programa, como editores de código y depuradores.
+        </div>
+        <div class="item">
+            <h1>Frameworks de desarrollo web</h1>
+            Se incluyen React, Django y Angular, que simplifican el desarrollo de 
+            aplicaciones web proporcionando una estructura estándar.
+        </div>
+        <div class="item">
+            <h1>Ambientes de desarrollo para dispositivos móviles</h1>
+            Se describen herramientas y entornos específicos para optimizar aplicaciones 
+            para smartphones y tablets, tanto en desarrollo nativo como multiplataforma.
+        </div>
+        <div class="item">
+            <h1>Arquitectura de las aplicaciones multimedia</h1>
+            Se explican diferentes modelos arquitectónicos, como la arquitectura cliente-servidor, 
+            en la nube, de microservicios, basada en eventos e híbrida.
+        </div>
+        <button id="next">SIGUIENTE</button>
+        <button id="prev">ANTERIOR</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
