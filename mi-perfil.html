@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carta de presentación</title>
+    <link rel="stylesheet" href="style1.css" />
+
+    <style>
+      .form-container {
+        margin-bottom: 20px;
+      }
+
+      #presentation-form {
+        text-align: center;
+      }
+      .form-group {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 50%;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      .presentation-card {
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 8px;
+        color: #fff;
+      }
+
+      #bgColor,
+      #textColor {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+      }
+
+      .contenido {
+        padding-bottom: 0px;
+      }
+
+      .contenido p {
+        text-align: center;
+      }
+
+      #presentation-card {
+        margin: 0 25px;
+        margin-bottom: 75px;
+      }
+
+      #presentation-card p {
+        margin: 10px 0;
+        color: unset;
+      }
+      #presentation-card h2 {
+        color: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="menu container">
+        <a href="#" class="logo">+ MAZ</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="Images/menu.png" class="menu-icono" alt="" />
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Parcial1.html">Tareas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--CONTENIDO-->
+    <section class="contenido">
+      <div class="contenido-content container">
+        <h2>Crear mi carta de presentación</h2>
+        <p>
+          En este apartado vas a poder crear una pequeña carta de presentación
+        </p>
+      </div>
+    </section>
+
+    <div class="form-container">
+      <form id="presentation-form">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" required/>
+        </div>
+        <div class="form-group">
+          <label for="surname">Apellidos:</label>
+          <input type="text" id="surname" required />
+        </div>
+        <div class="form-group">
+          <label for="age">Edad:</label>
+          <input type="number" id="age" required min="1" max="100" />
+        </div>
+        <div class="form-group">
+          <label for="gender">Sexo:</label>
+          <select id="gender" required>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="school">Escuela:</label>
+          <input type="text" id="school" required />
+        </div>
+        <div class="form-group">
+          <label for="description"
+            >Descripción personal (máx. 300 caracteres):</label
+          >
+          <textarea
+            id="description"
+            rows="5"
+            maxlength="300"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="bgColor">Color de fondo de la carta:</label>
+          <input type="color" id="bgColor" value="#000000" />
+        </div>
+        <div class="form-group">
+          <label for="bgColor">Color de letra de la carta:</label>
+          <input type="color" id="textColor" value="#ffffff" />
+        </div>
+        <button type="submit">Guardar y Mostrar</button>
+      </form>
+    </div>
+
+    <div
+      id="presentation-card"
+      class="presentation-card"
+      style="display: none"
+    ></div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-content container">
+        <h3>©Areli R.C., Marisol H.H., Zaid R.H.</h3>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById("presentation-form");
+      const card = document.getElementById("presentation-card");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // Capturar datos del formulario
+        const name = document.getElementById("name").value;
+        const surname = document.getElementById("surname").value;
+        const age = document.getElementById("age").value;
+        const gender = document.getElementById("gender").value;
+        const school = document.getElementById("school").value;
+        const description = document.getElementById("description").value;
+        const bgColor = document.getElementById("bgColor").value;
+        const textColor = document.getElementById("textColor").value;
+        console.log(textColor);
+
+        // Crear objeto con los datos
+        const userData = {
+          name,
+          surname,
+          age,
+          gender,
+          school,
+          description,
+          bgColor,
+          textColor,
+        };
+
+        // Guardar en localStorage
+        localStorage.setItem("userData", JSON.stringify(userData));
+
+        // Mostrar los datos en la tarjeta
+        displayCard(userData);
+      });
+
+      function displayCard(data) {
+        card.style.display = "block";
+        card.style.backgroundColor = data.bgColor;
+        card.style.color = data.textColor;
+        card.style.padding = "15px";
+        card.innerHTML = `
+                <h2>${data.name} ${data.surname}</h2>
+                <p><strong>Edad:</strong> ${data.age}</p>
+                <p><strong>Sexo:</strong> ${data.gender}</p>
+                <p><strong>Escuela:</strong> ${data.school}</p>
+                <p><strong>Descripción:</strong> ${data.description}</p>
+            `;
+      }
+
+      // Verificar si hay datos en localStorage al cargar la página
+      document.addEventListener("DOMContentLoaded", () => {
+        const storedData = localStorage.getItem("userData");
+        if (storedData) {
+          displayCard(JSON.parse(storedData));
+        }
+      });
+    </script>
+  </body>
+</html>
